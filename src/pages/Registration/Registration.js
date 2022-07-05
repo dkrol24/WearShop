@@ -4,7 +4,7 @@ import './styles.scss'
 class Registration extends Component{
     render(){
         return(
-            <div>
+            <div className='fullHeight'>
                 <h1>
                     Registration page
                 </h1>
