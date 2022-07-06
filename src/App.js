@@ -10,6 +10,7 @@ import HomepageLayout from './layouts/HomepageLayout';
 import Homepage from './pages/HomePage/HomePage';
 import Registration from './pages/Registration/Registration'
 import Login from './pages/Login/Login';
+import RecoveryPassword from './pages/RecoveryPassword/RecoveryPassword';
 
 
 const initialState = {
@@ -68,6 +69,12 @@ render(){
     <Route path="/login" render={()=> currentUser ? <Redirect to="/"/> : (
       <MainLayout currentUser={currentUser}>
         <Login/>
+      </MainLayout>
+    )}/>
+
+    <Route path="/recovery" render={() => (
+      <MainLayout>
+        <RecoveryPassword />
       </MainLayout>
     )}/>
     </Switch>

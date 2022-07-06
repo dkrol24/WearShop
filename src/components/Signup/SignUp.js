@@ -1,10 +1,11 @@
 import React,{Component} from 'react';
-import './styles.scss';
+
 
 import {auth,handleUserProfile} from '../../firebase/firebase'
 
 import FormInput from '../Forms/FormInput/FormInput';
 import Button from '../Forms/Button/Button';
+import AuthWrapper from '../AuthWrapper/AuthWrapper';
 
 const initialState = {
   displayName: '',
@@ -62,23 +63,23 @@ class SignUp extends Component {
   render(){
 
     const {displayName,email,password,confrimPassword,errors} = this.state;
-
+    const configAuthWrapper = {
+      headline: 'Zarejestruj się'
+  }
     return(
-        <div className='signup'>
-            <div className='wrap'>
-                <h2>Zapisz się</h2>
+      <AuthWrapper {...configAuthWrapper}> 
+                <div className="formWrap">
                 {errors.length > 0 && (
                   <ul>
                     {errors.map((err,index) => {
-                     return(
-                      <li key={index}>
+                      return(
+                        <li key={index}>
                         {err}
                       </li>
                      )
                     })}
                   </ul>
                 )}
-                <div className="formWrap">
                 <form onSubmit={this.handleFormSubmit}>
                   <FormInput type='text' name='displayName' value={displayName} placeholder="Imię i nazwisko" onChange={this.handleChange}/>
                   <FormInput type='email' name='email' value={email} placeholder="E-mail" onChange={this.handleChange}/>
@@ -88,8 +89,8 @@ class SignUp extends Component {
 
                 </form>
                 </div>
-            </div>
-        </div>
+                    </AuthWrapper>
+
     )
   }
 }
