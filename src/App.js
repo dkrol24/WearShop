@@ -57,17 +57,17 @@ render(){
     <div className='App'>
     <Switch>
     <Route exact path="/" render={()=>(
-      <HomepageLayout currentUser={currentUser}>
+      <HomepageLayout >
         <Homepage/>
       </HomepageLayout>
     )}/>
     <Route path="/registration" render={()=> currentUser ? <Redirect to="/"/> : (
-      <MainLayout currentUser={currentUser}>
+      <MainLayout>
         <Registration/>
       </MainLayout>
     )}/>
     <Route path="/login" render={()=> currentUser ? <Redirect to="/"/> : (
-      <MainLayout currentUser={currentUser}>
+      <MainLayout>
         <Login/>
       </MainLayout>
     )}/>
