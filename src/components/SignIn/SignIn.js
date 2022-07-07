@@ -83,9 +83,13 @@ class SignIn extends Component{
                                 </div>
 
                                 <div className="links">
+                                    <Link to="/login">
+                                        Zarejestruj się
+                                    </Link>
+                                    {` | `}
                                     <Link to="/recovery">
                                         Zapomniałeś hasła?
-                                    </Link>
+                                    </Link>    
                                 </div>
                             </form>
                         </div>
