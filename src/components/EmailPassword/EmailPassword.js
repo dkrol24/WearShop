@@ -1,67 +1,54 @@
-import React,{Component} from 'react'
-import './styles.scss'
-import { withRouter } from 'react-router-dom'
+import React, { useState, useEffect } from 'react';
+import { useDispatch, useSelector } from 'react-redux';
+import { useHistory, Link } from 'react-router-dom';
+import { resetPasswordStart, resetUserState } from '../../redux/User/user.actions';
+import './styles.scss';
 
+import AuthWrapper from '../AuthWrapper/AuthWrapper';
+import FormInput from '../Forms/FormInput/FormInput';
+import Button from '../Forms/Button/Button';
 
-import AuthWrapper from '../AuthWrapper/AuthWrapper'
-import FormInput from '../Forms/FormInput/FormInput'
-import Button from '../Forms/Button/Button'
+const mapState = ({ user }) => ({
+  resetPasswordSuccess: user.resetPasswordSuccess,
+  userErr: user.userErr
+});
 
-import { auth } from '../../firebase/firebase'
+const EmailPassword = props => {
+  const dispatch = useDispatch();
+  const history = useHistory();
+  const { resetPasswordSuccess, userErr } = useSelector(mapState);
+  const [email, setEmail] = useState('');
+  const [errors, setErrors] = useState([]);
 
-const initialState = {
-    email:'',
-    errors: []
-};
-
-class EmailPassword extends Component {
-    constructor(props){
-        super(props);
-        this.state= {
-            ...initialState
-        };
-        this.handleChange = this.handleChange.bind(this);
+  useEffect(() => {
+    if (resetPasswordSuccess) {
+      dispatch(resetUserState());
+      history.push('/login');
     }
-    handleChange(e){
-        const {name,value} = e.target;
-        this.setState({
-            [name]: value
-        });
+
+  }, [resetPasswordSuccess]);
+
+  useEffect(() => {
+    if (Array.isArray(userErr) && userErr.length > 0) {
+      setErrors(userErr);
     }
-    handleSubmit = async (e) =>{
-        e.preventDefault();
-        try{
-            const {email} = this.state;
-            const config = {
-                url: 'http://localhost:3000/login'
-            };
 
-            await auth.sendPasswordResetEmail(email,config)
-            .then(() => {
-                this.props.history.push('/login');
-            })
-            .catch(()=>{
-                const err = ['Niepoprawny adres e-mail'];
-                this.setState({
-                    errors:err
-                });
-            });
+  }, [userErr]);
 
-        }catch(err){
-            // console.log(err);
-        }
-    };
+  const handleSubmit = e => {
+    e.preventDefault();
+    dispatch(resetPasswordStart({ email }));
+  }
 
+  const configAuthWrapper = {
+    headline: 'E-mail'
+  };
 
-    render(){
-        const {email, errors} = this.state;
-        const configAuthWrapper = {
-            headline: 'Nowe hasło na e-mail'
-        }
-        return(
-            <AuthWrapper {...configAuthWrapper}>
-                <div className='formWrap'>
-                {errors.length > 0 && (
+  return (
+    <AuthWrapper {...configAuthWrapper}>
+      <div className="formWrap">
+
+        {errors.length > 0 && (
           <ul>
             {errors.map((e, index) => {
               return (
@@ -72,20 +59,36 @@ class EmailPassword extends Component {
             })}
           </ul>
         )}
-                    <form onSubmit={this.handleSubmit}>
-                        <FormInput 
-                        type="email"
-                        name="email"
-                        value={email}
-                        placeholder="E-mail"
-                        onChange={this.handleChange}
-                        />
-                    <Button type="submit">Wyślij</Button>
-                    </form>
-                </div>
-            </AuthWrapper>
-        )
-    }
+
+        <form onSubmit={handleSubmit}>
+
+          <FormInput
+            type="email"
+            name="email"
+            value={email}
+            placeholder="Email"
+            handleChange={e => setEmail(e.target.value)}
+          />
+
+          <Button type="submit">
+            Wyślij.
+          </Button>
+
+        </form>
+
+        <div className="links">
+          <Link to="/login">
+            Zaloguj się
+          </Link>
+          {` | `}
+          <Link to="/registration">
+            Zarejestruj się
+          </Link>
+        </div>
+
+      </div>
+    </AuthWrapper>
+  );
 }
 
-export default withRouter(EmailPassword);
+export default EmailPassword;

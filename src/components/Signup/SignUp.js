@@ -38,6 +38,7 @@ const SignUp = props => {
     }
 
   }, [userErr]);
+  
   const reset = () => {
     setDisplayName('');
     setEmail('');

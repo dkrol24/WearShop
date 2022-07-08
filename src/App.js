@@ -13,6 +13,7 @@ import Homepage from './pages/HomePage/HomePage';
 import Registration from './pages/Registration/Registration'
 import Login from './pages/Login/Login';
 import RecoveryPassword from './pages/RecoveryPassword/RecoveryPassword';
+import Dashboard from './pages/Dashboard/Dashboard';
 
 
 
@@ -61,6 +62,11 @@ const {setCurrentUser, currentUser} = props;
     <Route path="/recovery" render={() => (
       <MainLayout>
         <RecoveryPassword />
+      </MainLayout>
+    )}/>
+    <Route path="/dashboard" render={() => (
+      <MainLayout>
+        <Dashboard />
       </MainLayout>
     )}/>
     </Switch>
