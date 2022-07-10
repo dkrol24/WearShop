@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import {withRouter,Link} from 'react-router-dom'
-import {useDispatch} from 'react-redux'
+import {useDispatch,useSelector} from 'react-redux'
 import { signUpUser } from '../../redux/User/user.actions';
-import {auth,handleUserProfile} from '../../firebase/firebase'
+
 
 
 
@@ -10,13 +10,33 @@ import FormInput from '../Forms/FormInput/FormInput';
 import Button from '../Forms/Button/Button';
 import AuthWrapper from '../AuthWrapper/AuthWrapper';
 
+
+const mapState = ({user}) => ({
+  signUpSuccess: user.signUpSuccess,
+  signUpError: user.signUpError
+})
+
 const SignUp = props => {
+  const {signUpSuccess,signUpError} = useSelector(mapState)
   const dispatch = useDispatch();
   const [displayName, setDisplayName] = useState('');
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [confirmPassword, setConfirmPassword] = useState('');
   const [errors, setErrors] = useState([]);
+
+  useEffect(()=>{
+    if (signUpSuccess) {
+      reset();
+      props.history.push('/');
+    }
+  },[signUpSuccess])
+
+  useEffect(()=>{
+    if (Array.isArray(signUpError) && signUpError.length > 0){
+      setErrors(signUpError);
+    }
+  },[signUpError])
 
   
   const reset = () => {

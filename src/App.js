@@ -1,7 +1,7 @@
 import React,{useEffect} from 'react'
 import './default.scss'
-import { connect } from 'react-redux/es/exports';
-import {Route,Switch,Redirect} from 'react-router-dom'
+import { useSelector,useDispatch } from 'react-redux';
+import {Route,Switch} from 'react-router-dom'
 import { auth, handleUserProfile } from './firebase/firebase';
 import { setCurrentUser } from './redux/User/user.actions';
 
@@ -21,23 +21,21 @@ import RecoveryPassword from './pages/RecoveryPassword/RecoveryPassword';
 import Dashboard from './pages/Dashboard/Dashboard';
 
 
-
-
 const App = props => {
-const {setCurrentUser, currentUser} = props;
+const dispatch = useDispatch();
 
   useEffect(() => {
     const authListener = auth.onAuthStateChanged(async userAuth => {
       if (userAuth) {
         const userRef = await handleUserProfile(userAuth);
         userRef.onSnapshot(snapshot => {
-          setCurrentUser({
+          dispatch(setCurrentUser({
             id: snapshot.id,
             ...snapshot.data()
-          });
+          }));
         })
       }
-      setCurrentUser(userAuth)
+      dispatch(setCurrentUser(userAuth))
     });
   
     return () => {
@@ -53,16 +51,16 @@ const {setCurrentUser, currentUser} = props;
         <Homepage/>
       </HomepageLayout>
     )}/>
-    <Route path="/registration" render={()=> currentUser ? <Redirect to="/"/> : (
+    <Route path="/registration" render={()=> 
       <MainLayout>
         <Registration/>
       </MainLayout>
-    )}/>
-    <Route path="/login" render={()=> currentUser ? <Redirect to="/"/> : (
+    }/>
+    <Route path="/login" render={()=> 
       <MainLayout>
         <Login/>
       </MainLayout>
-    )}/>
+    }/>
 
     <Route path="/recovery" render={() => (
       <MainLayout>
@@ -82,12 +80,6 @@ const {setCurrentUser, currentUser} = props;
 
   )
 }
-const mapStateToProps = ({user}) => ({
-  currentUser: user.currentUser
-});
 
-const mapDispatchToProps = dispatch => ({
-  setCurrentUser: user => dispatch(setCurrentUser(user))
-});
 
-export default connect(mapStateToProps, mapDispatchToProps)(App);
+export default App;

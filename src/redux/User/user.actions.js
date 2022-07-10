@@ -1,5 +1,5 @@
 import userTypes from "./user.types";
-import { auth,handleUserProfile } from "../../firebase/firebase";
+import { auth,handleUserProfile,GoogleProvider} from "../../firebase/firebase";
 
 export const setCurrentUser = user => ({
 
@@ -42,3 +42,44 @@ export const signUpUser = ({
       // console.log(err)
     }
 }
+
+export const resetPassword = ({email}) => async dispatch => {
+  const config = {
+    url: 'http://localhost:3000/login'
+  };
+    try{
+      await auth.sendPasswordResetEmail(email, config)
+      .then(()=>{
+        dispatch({
+          type: userTypes.RESET_PASSWORD_SUCCESS,
+          payload: true
+        })
+       // props.history.push('/login');
+      })
+      .catch(()=>{
+        const err = ['Email not found'];
+        dispatch({
+          type: userTypes.RESET_PASSWORD_ERROR,
+          payload: err
+        })
+       // setErrors(err);
+      })
+    }  catch(err){
+      //console.log(err)
+    }
+}
+
+  export const signInWithGoogle = () => async dispatch => {
+
+    try {
+     await auth.signInWithPopup(GoogleProvider)
+     .then(()=>{
+      
+     })
+
+    }catch (err){
+      //console.log(err)
+    }
+
+
+  }

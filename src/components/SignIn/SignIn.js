@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import {useDispatch,useSelector} from 'react-redux'
-import { signInUser } from '../../redux/User/user.actions';
+import { signInUser,signInWithGoogle } from '../../redux/User/user.actions';
 
 import { Link, withRouter } from 'react-router-dom';
-import { signInWithGoogle } from '../../firebase/firebase';
+
 
 
 
@@ -40,7 +40,9 @@ const SignIn = props => {
     e.preventDefault();
     dispatch(signInUser({email,password}));
   }
-
+ const handleGoogleSignIn = () => {
+  dispatch(signInWithGoogle());
+ }
   const configAuthWrapper = {
     headline: 'LogIn'
   };
@@ -72,7 +74,7 @@ const SignIn = props => {
 
           <div className="socialSignin">
             <div className="row">
-              <Button onClick={signInWithGoogle}>
+              <Button onClick={handleGoogleSignIn}>
                 Sign in with Google
               </Button>
             </div>
