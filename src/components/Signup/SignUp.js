@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import {withRouter,Link} from 'react-router-dom'
-
-
+import {useDispatch} from 'react-redux'
+import { signUpUser } from '../../redux/User/user.actions';
 import {auth,handleUserProfile} from '../../firebase/firebase'
 
 
@@ -11,7 +11,7 @@ import Button from '../Forms/Button/Button';
 import AuthWrapper from '../AuthWrapper/AuthWrapper';
 
 const SignUp = props => {
-
+  const dispatch = useDispatch();
   const [displayName, setDisplayName] = useState('');
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
@@ -27,21 +27,15 @@ const SignUp = props => {
     setErrors([]);
   };
 
-  const handleFormSubmit = async event => {
+  const handleFormSubmit =  event => {
     event.preventDefault();
-    if (password !== confirmPassword) {
-      const err = ['Password dont match'];
-      setErrors(err);
-      return
-    }
-    try {
-      const {user} = await auth.createUserWithEmailAndPassword(email,password);
-      await handleUserProfile(user, {displayName});
-      reset();
-      props.history.push('/');
-    } catch (err){
-      console.log(err)
-    }
+    dispatch(signUpUser({
+      displayName,
+      email,
+      password,
+      confirmPassword
+    }));
+
   }
 
   const configAuthWrapper = {
