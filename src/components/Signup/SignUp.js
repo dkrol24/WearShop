@@ -1,43 +1,23 @@
 import React, { useState, useEffect } from 'react';
-import { useDispatch, useSelector } from 'react-redux';
-import { useHistory, Link } from 'react-router-dom';
-import {signUpUserStart} from '../../redux/User/user.actions'
+import {withRouter,Link} from 'react-router-dom'
+
+
+import {auth,handleUserProfile} from '../../firebase/firebase'
+
+
+
 import FormInput from '../Forms/FormInput/FormInput';
 import Button from '../Forms/Button/Button';
 import AuthWrapper from '../AuthWrapper/AuthWrapper';
 
-const mapState = ({ user }) => ({
-  currentUser: user.currentUser,
-  userErr: user.userErr
-});
-
 const SignUp = props => {
-  const dispatch = useDispatch();
-  const history = useHistory();
-  const { currentUser, userErr } = useSelector(mapState);
+
   const [displayName, setDisplayName] = useState('');
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [confirmPassword, setConfirmPassword] = useState('');
   const [errors, setErrors] = useState([]);
 
-
-
-
-  useEffect(() => {
-    if (currentUser) {
-      reset();
-      history.push('/');
-    }
-
-  }, [currentUser]);
-
-  useEffect(() => {
-    if (Array.isArray(userErr) && userErr.length > 0) {
-      setErrors(userErr);
-    }
-
-  }, [userErr]);
   
   const reset = () => {
     setDisplayName('');
@@ -47,14 +27,21 @@ const SignUp = props => {
     setErrors([]);
   };
 
-  const handleFormSubmit = event => {
+  const handleFormSubmit = async event => {
     event.preventDefault();
-    dispatch(signUpUserStart({
-      displayName,
-      email,
-      password,
-      confirmPassword
-    }));
+    if (password !== confirmPassword) {
+      const err = ['Password dont match'];
+      setErrors(err);
+      return
+    }
+    try {
+      const {user} = await auth.createUserWithEmailAndPassword(email,password);
+      await handleUserProfile(user, {displayName});
+      reset();
+      props.history.push('/');
+    } catch (err){
+      console.log(err)
+    }
   }
 
   const configAuthWrapper = {
@@ -87,11 +74,11 @@ const SignUp = props => {
                 Zaloguj
           </Link>
           
-        </div>
+        </div> 
                 </div>
                     </AuthWrapper>
 
     )
   }
 
-export default SignUp
+export default withRouter(SignUp);

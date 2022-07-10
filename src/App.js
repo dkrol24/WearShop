@@ -4,6 +4,11 @@ import { connect } from 'react-redux/es/exports';
 import {Route,Switch,Redirect} from 'react-router-dom'
 import { auth, handleUserProfile } from './firebase/firebase';
 import { setCurrentUser } from './redux/User/user.actions';
+
+//hoc
+import WithAuth from './hoc/withAuth'
+
+
 // layouts
 import MainLayout from './layouts/MainLayout';
 import HomepageLayout from './layouts/HomepageLayout';
@@ -65,9 +70,11 @@ const {setCurrentUser, currentUser} = props;
       </MainLayout>
     )}/>
     <Route path="/dashboard" render={() => (
+      <WithAuth>
       <MainLayout>
         <Dashboard />
       </MainLayout>
+      </WithAuth>
     )}/>
     </Switch>
 
