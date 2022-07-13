@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import {useDispatch,useSelector} from 'react-redux'
-import { Link,withRouter } from 'react-router-dom';
-import { resetPassword } from '../../redux/User/user.actions';
+import { Link } from 'react-router-dom';
+import { resetPassword,resetAllAuthForms } from '../../redux/User/user.actions';
 
 import './styles.scss';
 
@@ -24,6 +24,7 @@ const EmailPassword = props => {
 
   useEffect(()=>{
     if (resetPasswordSuccess){
+      dispatch(resetAllAuthForms());
       props.history.push('/login')
     }
   },[resetPasswordSuccess]);

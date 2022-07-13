@@ -23,7 +23,7 @@ export const db = firebaseApp.firestore();
   GoogleProvider.setCustomParameters({prompt:'select_account'});
 
   
- export const handleUserProfile = async(userAuth,additionalData) => {
+ export const handleUserProfile = async({userAuth,additionalData}) => {
   if (!userAuth) return;
   const {uid} = userAuth;
 
@@ -50,5 +50,13 @@ export const db = firebaseApp.firestore();
     }
   }
   return userRef;
+ };
 
+ export const getCurrentUser = () => {
+  return new Promise((resolve, reject) => {
+    const unsubscribe = auth.onAuthStateChanged(userAuth => {
+      unsubscribe();
+      resolve(userAuth);
+    }, reject);
+  })
  }

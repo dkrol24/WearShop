@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import {useDispatch,useSelector} from 'react-redux'
-import { signInUser,signInWithGoogle } from '../../redux/User/user.actions';
+import { emailSignInStart,signInWithGoogle,resetAllAuthForms } from '../../redux/User/user.actions';
 
 import { Link, withRouter } from 'react-router-dom';
 
@@ -12,22 +12,22 @@ import FormInput from '../Forms/FormInput/FormInput';
 import Button from '../Forms/Button/Button';
 
 const mapState = ({user}) => ({
-  signInSuccess: user.signInSuccess
+  currentUser: user.currentUser
 });
 
 const SignIn = props => {
-  const { signInSuccess} = useSelector(mapState)
+  const { currentUser} = useSelector(mapState)
   const dispatch = useDispatch();
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('')
 
-
+//if you hit in LOGOUT - then you can't click LOGIN because signInSuccess is :true THIS NEW ACTION RESET SIGNINSUCCES
   useEffect(()=>{
-    if (signInSuccess){
+    if (currentUser){
     resetForm();
     props.history.push('/');
     }
-  },[signInSuccess])
+  },[currentUser]);
 
 
 
@@ -38,7 +38,7 @@ const SignIn = props => {
 
   const handleSubmit =  e => {
     e.preventDefault();
-    dispatch(signInUser({email,password}));
+    dispatch(emailSignInStart({email,password}));
   }
  const handleGoogleSignIn = () => {
   dispatch(signInWithGoogle());
