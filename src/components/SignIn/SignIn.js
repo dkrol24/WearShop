@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import {useDispatch,useSelector} from 'react-redux'
-import { emailSignInStart,signInWithGoogle,resetAllAuthForms } from '../../redux/User/user.actions';
+import { emailSignInStart,googleSignInStart } from '../../redux/User/user.actions';
 
-import { Link, withRouter } from 'react-router-dom';
+import { Link, withRouter,useHistory } from 'react-router-dom';
 
 
 
@@ -20,7 +20,7 @@ const SignIn = props => {
   const dispatch = useDispatch();
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('')
-
+  const history = useHistory();
 //if you hit in LOGOUT - then you can't click LOGIN because signInSuccess is :true THIS NEW ACTION RESET SIGNINSUCCES
   useEffect(()=>{
     if (currentUser){
@@ -41,7 +41,7 @@ const SignIn = props => {
     dispatch(emailSignInStart({email,password}));
   }
  const handleGoogleSignIn = () => {
-  dispatch(signInWithGoogle());
+  dispatch(googleSignInStart());
  }
   const configAuthWrapper = {
     headline: 'LogIn'
@@ -96,4 +96,4 @@ const SignIn = props => {
   );
 }
 
-export default withRouter(SignIn);
+export default SignIn;
