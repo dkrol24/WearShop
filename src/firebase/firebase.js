@@ -3,8 +3,6 @@ import "firebase/compat/firestore";
 import "firebase/compat/auth";
 
 
-
-
 const firebaseApp = firebase.initializeApp({
     apiKey: "AIzaSyDUHTloCafxOJffNctDWGHQSuVhMlGpG6o",
     authDomain: "easytutshop.firebaseapp.com",
@@ -30,19 +28,18 @@ export const db = firebaseApp.firestore();
   const userRef = firestore.doc(`users/${uid}`);
   const snapshot = await userRef.get();
 
-
-
-
   if (!snapshot.exists) {
 
     const {displayName,email} = userAuth;
     const timestamp = new Date();
+    const userRoles = ['user'];
 
     try{
       await userRef.set({
         displayName,
         email,
         createdDate: timestamp,
+        userRoles,
         ...additionalData
       })
     }catch(err){

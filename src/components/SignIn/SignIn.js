@@ -25,7 +25,7 @@ const SignIn = props => {
   useEffect(()=>{
     if (currentUser){
     resetForm();
-    props.history.push('/');
+    history.push('/');
     }
   },[currentUser]);
 

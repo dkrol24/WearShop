@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import {withRouter,Link,useHistory} from 'react-router-dom'
+import {Link,useHistory} from 'react-router-dom'
 import {useDispatch,useSelector} from 'react-redux'
 import { signUpUserStart } from '../../redux/User/user.actions';
 
@@ -29,7 +29,7 @@ const SignUp = props => {
   useEffect(()=>{
     if (currentUser) {
       reset();
-      props.history.push('/');
+      history.push('/');
     }
   },[currentUser])
 

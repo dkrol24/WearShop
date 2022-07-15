@@ -6,7 +6,7 @@ import { checkUserSession } from './redux/User/user.actions';
 
 //hoc
 import WithAuth from './hoc/withAuth'
-
+import WithAdminAuth from './hoc/withAdminAuth';
 
 // layouts
 import MainLayout from './layouts/MainLayout';
@@ -18,6 +18,7 @@ import Registration from './pages/Registration/Registration'
 import Login from './pages/Login/Login';
 import RecoveryPassword from './pages/RecoveryPassword/RecoveryPassword';
 import Dashboard from './pages/Dashboard/Dashboard';
+import Admin from './pages/Admin/Admin';
 
 
 const App = props => {
@@ -50,6 +51,13 @@ const dispatch = useDispatch();
       <MainLayout>
         <RecoveryPassword />
       </MainLayout>
+    )}/>
+    <Route path="/admin" render={() => (
+      <WithAdminAuth>
+      <MainLayout>
+        <Admin />
+      </MainLayout>
+      </WithAdminAuth>
     )}/>
     <Route path="/dashboard" render={() => (
       <WithAuth>
