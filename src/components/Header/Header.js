@@ -24,7 +24,7 @@ const Header = props => {
      <div className='wrap'>
       <div className='logo'>
         <Link to="/">
-        <img src={Logo} alt="SimpleTut LOGO" />
+        <h1 style={{fontSize:'15px', fontWeight:'bold', margin:'0', lineHeight:'15px'}}>Cloud-Shop (LOGO)</h1>
         
         </Link>
       </div>
