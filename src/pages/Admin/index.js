@@ -1,13 +1,24 @@
 import React, { useState, useEffect } from "react";
-import { firestore } from "./../../firebase/utils";
+
+import { useDispatch, useSelector } from "react-redux";
+import {
+  addProductStart,
+  fetchProductsStart,
+  deleteProductStart,
+} from "./../../redux/Products/products.actions";
 import Modal from "./../../components/Modal";
 import FormInput from "./../../components/forms/FormInput";
 import FormSelect from "./../../components/forms/FormSelect";
 import Button from "./../../components/forms/Button";
 import "./styles.scss";
 
+const mapState = ({ productsData }) => ({
+  products: productsData.products,
+});
+
 const Admin = (props) => {
-  const [products, setProducts] = useState([]);
+  const { products } = useSelector(mapState);
+  const dispatch = useDispatch();
   const [hideModal, setHideModal] = useState(true);
   const [productCategory, setProductCategory] = useState("mens");
   const [productName, setProductName] = useState("");
@@ -21,32 +32,30 @@ const Admin = (props) => {
     toggleModal,
   };
 
-  useEffect(() => {
-    firestore
-      .collection("products")
-      .get()
-      .then((snapshot) => {
-        const snapshotData = snapshot.docs.map((doc) => doc.data());
-        setProducts(snapshotData);
-      });
-  }, []);
+  const resetForm = () => {
+    setHideModal(true);
+    setProductCategory("mens");
+    setProductName("");
+    setProductThumbnail("");
+    setProductPrice(0);
+  };
 
   const handleSubmit = (e) => {
     e.preventDefault();
-
-    firestore
-      .collection("products")
-      .doc()
-      .set({
+    dispatch(
+      addProductStart({
         productCategory,
         productName,
         productThumbnail,
         productPrice,
       })
-      .then((e) => {
-        // Success
-      });
+    );
+    resetForm();
   };
+
+  useEffect(() => {
+    dispatch(fetchProductsStart());
+  }, []);
 
   return (
     <div className="admin">
