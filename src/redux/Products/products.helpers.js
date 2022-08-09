@@ -15,20 +15,42 @@ export const handleAddProduct = (product) => {
   });
 };
 
-export const handleFetchProducts = () => {
+export const handleFetchProducts = ({
+  filterType,
+  startAfterDoc,
+  persistProducts = [],
+}) => {
   return new Promise((resolve, reject) => {
-    firestore
+    const pageSize = 6;
+
+    let ref = firestore
       .collection("products")
       .orderBy("createdDate")
+      .limit(pageSize);
+
+    if (filterType) ref = ref.where("productCategory", "==", filterType);
+    if (startAfterDoc) ref = ref.startAfter(startAfterDoc);
+
+    ref
       .get()
       .then((snapshot) => {
-        const productsArray = snapshot.docs.map((doc) => {
-          return {
-            ...doc.data(),
-            documentID: doc.id,
-          };
+        const totalCount = snapshot.size;
+
+        const data = [
+          ...persistProducts,
+          ...snapshot.docs.map((doc) => {
+            return {
+              ...doc.data(),
+              documentID: doc.id,
+            };
+          }),
+        ];
+
+        resolve({
+          data,
+          queryDoc: snapshot.docs[totalCount - 1],
+          isLastPage: totalCount < 1,
         });
-        resolve(productsArray);
       })
       .catch((err) => {
         reject(err);
@@ -37,7 +59,6 @@ export const handleFetchProducts = () => {
 };
 
 export const handleDeleteProduct = (documentID) => {
-  console.log(documentID, 1);
   return new Promise((resolve, reject) => {
     firestore
       .collection("products")
@@ -46,6 +67,23 @@ export const handleDeleteProduct = (documentID) => {
       .then(() => {
         console.log(documentID, 2);
         resolve();
+      })
+      .catch((err) => {
+        reject(err);
+      });
+  });
+};
+
+export const handleFetchProduct = (productID) => {
+  return new Promise((resolve, reject) => {
+    firestore
+      .collection("products")
+      .doc(productID)
+      .get()
+      .then((snapshot) => {
+        if (snapshot.exists) {
+          resolve(snapshot.data());
+        }
       })
       .catch((err) => {
         reject(err);
