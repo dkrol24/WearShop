@@ -2,17 +2,19 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { useSelector, useDispatch } from "react-redux";
 import { signOutUserStart } from "./../../redux/User/user.actions";
+import { selectCartItemsCount } from "./../../redux/Cart/cart.selectors";
 import "./styles.scss";
 
 import Logo from "./../../assets/logo.png";
 
-const mapState = ({ user }) => ({
-  currentUser: user.currentUser,
+const mapState = (state) => ({
+  currentUser: state.user.currentUser,
+  totalNumCartItems: selectCartItemsCount(state),
 });
 
 const Header = (props) => {
   const dispatch = useDispatch();
-  const { currentUser } = useSelector(mapState);
+  const { currentUser, totalNumCartItems } = useSelector(mapState);
 
   const signOut = () => {
     dispatch(signOutUserStart());
@@ -39,27 +41,29 @@ const Header = (props) => {
         </nav>
 
         <div className="callToActions">
-          {currentUser && (
-            <ul>
-              <li>
-                <Link to="/dashboard">My Account</Link>
-              </li>
-              <li>
-                <span onClick={() => signOut()}>LogOut</span>
-              </li>
-            </ul>
-          )}
+          <ul>
+            <li>
+              <Link to="/cart">Your Cart ({totalNumCartItems})</Link>
+            </li>
 
-          {!currentUser && (
-            <ul>
-              <li>
+            {currentUser && [
+              <li key={1}>
+                <Link to="/dashboard">My Account</Link>
+              </li>,
+              <li key={2}>
+                <span onClick={() => signOut()}>LogOut</span>
+              </li>,
+            ]}
+
+            {!currentUser && [
+              <li key={1}>
                 <Link to="/registration">Register</Link>
-              </li>
-              <li>
+              </li>,
+              <li key={2}>
                 <Link to="/login">Login</Link>
-              </li>
-            </ul>
-          )}
+              </li>,
+            ]}
+          </ul>
         </div>
       </div>
     </header>
