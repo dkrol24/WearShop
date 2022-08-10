@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 import { useDispatch } from "react-redux";
 import { Switch, Route } from "react-router-dom";
 import { checkUserSession } from "./redux/User/user.actions";
-import Cart from "./pages/Cart";
+
 // components
 import AdminToolbar from "./components/AdminToolbar";
 
@@ -25,6 +25,8 @@ import Recovery from "./pages/Recovery";
 import Dashboard from "./pages/Dashboard";
 import Admin from "./pages/Admin";
 import ProductDetails from "./pages/ProductDetails";
+import Cart from "./pages/Cart";
+import Payment from "./pages/Payment";
 import "./default.scss";
 
 const App = (props) => {
@@ -78,6 +80,16 @@ const App = (props) => {
             <MainLayout>
               <Cart />
             </MainLayout>
+          )}
+        />
+        <Route
+          path="/payment"
+          render={() => (
+            <WithAuth>
+              <MainLayout>
+                <Payment />
+              </MainLayout>
+            </WithAuth>
           )}
         />
         <Route
