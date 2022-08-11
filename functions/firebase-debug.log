@@ -1,38 +1,37 @@
-[debug] [2022-08-10T18:58:09.458Z] ----------------------------------------------------------------------
-[debug] [2022-08-10T18:58:09.459Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\d_kro\projects react\wearshop\node_modules\firebase-tools\lib\bin\firebase.js emulators:start --only functions
-[debug] [2022-08-10T18:58:09.460Z] CLI Version:   11.4.2
-[debug] [2022-08-10T18:58:09.460Z] Platform:      win32
-[debug] [2022-08-10T18:58:09.460Z] Node Version:  v16.14.0
-[debug] [2022-08-10T18:58:09.461Z] Time:          Wed Aug 10 2022 20:58:09 GMT+0200 (czas środkowoeuropejski letni)
-[debug] [2022-08-10T18:58:09.461Z] ----------------------------------------------------------------------
+[debug] [2022-08-11T17:20:38.680Z] ----------------------------------------------------------------------
+[debug] [2022-08-11T17:20:38.683Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\d_kro\projects react\wearshop\node_modules\firebase-tools\lib\bin\firebase.js emulators:start --only functions
+[debug] [2022-08-11T17:20:38.684Z] CLI Version:   11.4.2
+[debug] [2022-08-11T17:20:38.684Z] Platform:      win32
+[debug] [2022-08-11T17:20:38.684Z] Node Version:  v16.14.0
+[debug] [2022-08-11T17:20:38.687Z] Time:          Thu Aug 11 2022 19:20:38 GMT+0200 (czas środkowoeuropejski letni)
+[debug] [2022-08-11T17:20:38.687Z] ----------------------------------------------------------------------
 [debug] 
-[debug] [2022-08-10T18:58:09.518Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
-[debug] [2022-08-10T18:58:09.518Z] > authorizing via signed-in user (krold2191@gmail.com)
+[debug] [2022-08-11T17:20:38.755Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2022-08-11T17:20:38.756Z] > authorizing via signed-in user (krold2191@gmail.com)
 [info] i  emulators: Starting emulators: functions {"metadata":{"emulator":{"name":"hub"},"message":"Starting emulators: functions"}}
-[warn] !  emulators: It seems that you are running multiple instances of the emulator suite for project wearshop2424. This may result in unexpected behavior. 
-[debug] [2022-08-10T18:58:09.560Z] [hub] writing locator at C:\Users\d_kro\AppData\Local\Temp\hub-wearshop2424.json
+[debug] [2022-08-11T17:20:38.806Z] [hub] writing locator at C:\Users\d_kro\AppData\Local\Temp\hub-wearshop2424.json
 [warn] !  functions: The following emulators are not running, calls to these services from the Functions emulator will affect production: auth, firestore, database, hosting, pubsub, storage {"metadata":{"emulator":{"name":"functions"},"message":"The following emulators are not running, calls to these services from the Functions emulator will affect production: \u001b[1mauth, firestore, database, hosting, pubsub, storage\u001b[22m"}}
 [info] +  functions: Using node@16 from host. {"metadata":{"emulator":{"name":"functions"},"message":"Using node@16 from host."}}
-[debug] [2022-08-10T18:58:14.086Z] defaultcredentials: writing to file C:\Users\d_kro\AppData\Roaming\firebase\krold2191_gmail_com_application_default_credentials.json
-[debug] [2022-08-10T18:58:14.087Z] Setting GAC to C:\Users\d_kro\AppData\Roaming\firebase\krold2191_gmail_com_application_default_credentials.json {"metadata":{"emulator":{"name":"functions"},"message":"Setting GAC to C:\\Users\\d_kro\\AppData\\Roaming\\firebase\\krold2191_gmail_com_application_default_credentials.json"}}
-[debug] [2022-08-10T18:58:14.089Z] > refreshing access token with scopes: []
-[debug] [2022-08-10T18:58:14.091Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
-[debug] [2022-08-10T18:58:14.091Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
-[debug] [2022-08-10T18:58:15.509Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 200
-[debug] [2022-08-10T18:58:15.509Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
-[debug] [2022-08-10T18:58:15.523Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/wearshop2424/adminSdkConfig [none]
-[debug] [2022-08-10T18:58:15.919Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/wearshop2424/adminSdkConfig 200
-[debug] [2022-08-10T18:58:15.920Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/wearshop2424/adminSdkConfig {"projectId":"wearshop2424","storageBucket":"wearshop2424.appspot.com","locationId":"us-central"}
-[warn] !  ui: Emulator UI unable to start on port 4000, starting on 4002 instead. {"metadata":{"emulator":{"name":"ui"},"message":"Emulator UI unable to start on port 4000, starting on 4002 instead."}}
-[debug] [2022-08-10T18:58:15.947Z] Ignoring unsupported arg: auto_download {"metadata":{"emulator":{"name":"ui"},"message":"Ignoring unsupported arg: auto_download"}}
-[debug] [2022-08-10T18:58:15.947Z] Ignoring unsupported arg: port {"metadata":{"emulator":{"name":"ui"},"message":"Ignoring unsupported arg: port"}}
-[debug] [2022-08-10T18:58:15.947Z] Starting Emulator UI with command {"binary":"node","args":["C:\\Users\\d_kro\\.cache\\firebase\\emulators\\ui-v1.8.1\\server\\server.js"],"optionalArgs":[],"joinArgs":false} {"metadata":{"emulator":{"name":"ui"},"message":"Starting Emulator UI with command {\"binary\":\"node\",\"args\":[\"C:\\\\Users\\\\d_kro\\\\.cache\\\\firebase\\\\emulators\\\\ui-v1.8.1\\\\server\\\\server.js\"],\"optionalArgs\":[],\"joinArgs\":false}"}}
+[debug] [2022-08-11T17:20:39.000Z] defaultcredentials: writing to file C:\Users\d_kro\AppData\Roaming\firebase\krold2191_gmail_com_application_default_credentials.json
+[debug] [2022-08-11T17:20:39.002Z] Setting GAC to C:\Users\d_kro\AppData\Roaming\firebase\krold2191_gmail_com_application_default_credentials.json {"metadata":{"emulator":{"name":"functions"},"message":"Setting GAC to C:\\Users\\d_kro\\AppData\\Roaming\\firebase\\krold2191_gmail_com_application_default_credentials.json"}}
+[debug] [2022-08-11T17:20:39.005Z] > refreshing access token with scopes: []
+[debug] [2022-08-11T17:20:39.006Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2022-08-11T17:20:39.007Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2022-08-11T17:20:39.198Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 200
+[debug] [2022-08-11T17:20:39.198Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2022-08-11T17:20:39.209Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/wearshop2424/adminSdkConfig [none]
+[debug] [2022-08-11T17:20:39.571Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/wearshop2424/adminSdkConfig 200
+[debug] [2022-08-11T17:20:39.571Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/wearshop2424/adminSdkConfig {"projectId":"wearshop2424","storageBucket":"wearshop2424.appspot.com","locationId":"us-central"}
+[warn] !  ui: Emulator UI unable to start on port 4000, starting on 4003 instead. {"metadata":{"emulator":{"name":"ui"},"message":"Emulator UI unable to start on port 4000, starting on 4003 instead."}}
+[debug] [2022-08-11T17:20:39.601Z] Ignoring unsupported arg: auto_download {"metadata":{"emulator":{"name":"ui"},"message":"Ignoring unsupported arg: auto_download"}}
+[debug] [2022-08-11T17:20:39.602Z] Ignoring unsupported arg: port {"metadata":{"emulator":{"name":"ui"},"message":"Ignoring unsupported arg: port"}}
+[debug] [2022-08-11T17:20:39.602Z] Starting Emulator UI with command {"binary":"node","args":["C:\\Users\\d_kro\\.cache\\firebase\\emulators\\ui-v1.8.1\\server\\server.js"],"optionalArgs":[],"joinArgs":false} {"metadata":{"emulator":{"name":"ui"},"message":"Starting Emulator UI with command {\"binary\":\"node\",\"args\":[\"C:\\\\Users\\\\d_kro\\\\.cache\\\\firebase\\\\emulators\\\\ui-v1.8.1\\\\server\\\\server.js\"],\"optionalArgs\":[],\"joinArgs\":false}"}}
 [info] i  ui: Emulator UI logging to ui-debug.log {"metadata":{"emulator":{"name":"ui"},"message":"Emulator UI logging to \u001b[1mui-debug.log\u001b[22m"}}
-[debug] [2022-08-10T18:58:16.106Z] Web / API server started at localhost:4002
- {"metadata":{"emulator":{"name":"ui"},"message":"Web / API server started at localhost:4002\n"}}
+[debug] [2022-08-11T17:20:39.769Z] Web / API server started at localhost:4003
+ {"metadata":{"emulator":{"name":"ui"},"message":"Web / API server started at localhost:4003\n"}}
 [info] i  functions: Watching "C:\Users\d_kro\projects react\wearshop\functions" for Cloud Functions... {"metadata":{"emulator":{"name":"functions"},"message":"Watching \"C:\\Users\\d_kro\\projects react\\wearshop\\functions\" for Cloud Functions..."}}
-[debug] [2022-08-10T18:58:16.259Z] Validating nodejs source
-[debug] [2022-08-10T18:58:18.678Z] > [functions] package.json contents: {
+[debug] [2022-08-11T17:20:39.888Z] Validating nodejs source
+[debug] [2022-08-11T17:20:43.597Z] > [functions] package.json contents: {
   "name": "functions",
   "description": "Cloud Functions for Firebase",
   "scripts": {
@@ -59,113 +58,175 @@
   },
   "private": true
 }
-[debug] [2022-08-10T18:58:18.678Z] Building nodejs source
-[debug] [2022-08-10T18:58:18.679Z] Analyzing nodejs backend spec
-[debug] [2022-08-10T18:58:18.679Z] Could not find functions.yaml. Must use http discovery
-[debug] [2022-08-10T18:58:18.920Z] Serving at port 9005
+[debug] [2022-08-11T17:20:43.597Z] Building nodejs source
+[debug] [2022-08-11T17:20:43.597Z] Analyzing nodejs backend spec
+[debug] [2022-08-11T17:20:43.599Z] Could not find functions.yaml. Must use http discovery
+[debug] [2022-08-11T17:20:43.975Z] Serving at port 9005
 
-[debug] [2022-08-10T18:58:19.081Z] Got response from /__/functions.yaml {"endpoints":{"api":{"platform":"gcfv1","httpsTrigger":{},"entryPoint":"api"}},"specVersion":"v1alpha1","requiredAPIs":[]}
-[debug] [2022-08-10T18:58:19.088Z] shutdown requested via /__/quitquitquit
+[debug] [2022-08-11T17:20:44.177Z] Got response from /__/functions.yaml {"endpoints":{"api":{"platform":"gcfv1","httpsTrigger":{},"entryPoint":"api"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[debug] [2022-08-11T17:20:44.187Z] shutdown requested via /__/quitquitquit
 
 [info] +  functions[us-central1-api]: http function initialized (http://localhost:5001/wearshop2424/us-central1/api). {"metadata":{"emulator":{"name":"functions"},"message":"\u001b[1mhttp\u001b[22m function initialized (http://localhost:5001/wearshop2424/us-central1/api)."}}
 [info] 
 ┌─────────────────────────────────────────────────────────────┐
 │ ✔  All emulators ready! It is now safe to connect your app. │
-│ i  View Emulator UI at http://localhost:4002                │
+│ i  View Emulator UI at http://localhost:4003                │
 └─────────────────────────────────────────────────────────────┘
 
 ┌───────────┬────────────────┬─────────────────────────────────┐
 │ Emulator  │ Host:Port      │ View in Emulator UI             │
 ├───────────┼────────────────┼─────────────────────────────────┤
-│ Functions │ localhost:5001 │ http://localhost:4002/functions │
+│ Functions │ localhost:5001 │ http://localhost:4003/functions │
 └───────────┴────────────────┴─────────────────────────────────┘
   Emulator Hub running at localhost:4400
   Other reserved ports: 4500
 
 Issues? Report them at https://github.com/firebase/firebase-tools/issues and attach the *-debug.log files.
  
-[debug] [2022-08-10T18:59:08.450Z] [work-queue] {"queueLength":1,"workRunningCount":0}
-[debug] [2022-08-10T18:59:08.451Z] [work-queue] {"queueLength":0,"workRunningCount":1}
-[debug] [2022-08-10T18:59:08.452Z] Accepted request GET /wearshop2424/us-central1/api --> us-central1-api
-[debug] [2022-08-10T18:59:08.475Z] [worker-pool] addWorker(us-central1-api) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] addWorker(us-central1-api)"}}
-[debug] [2022-08-10T18:59:08.475Z] [worker-pool] Adding worker with key us-central1-api, total=1 {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] Adding worker with key us-central1-api, total=1"}}
-[debug] [2022-08-10T18:59:08.475Z] [worker-pool] submitWork(triggerId=us-central1-api) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitWork(triggerId=us-central1-api)"}}
-[debug] [2022-08-10T18:59:08.475Z] [worker-us-central1-api-bbefe50e-bea0-4542-a3b5-37549e85884c]: BUSY {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-api-bbefe50e-bea0-4542-a3b5-37549e85884c]: BUSY"}}
-[debug] [2022-08-10T18:59:09.823Z] [runtime-status] [20156] Resolved module firebase-admin {"declared":true,"installed":true,"version":"10.3.0","resolution":"C:\\Users\\d_kro\\projects react\\wearshop\\functions\\node_modules\\firebase-admin\\lib\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [20156] Resolved module firebase-admin {\"declared\":true,\"installed\":true,\"version\":\"10.3.0\",\"resolution\":\"C:\\\\Users\\\\d_kro\\\\projects react\\\\wearshop\\\\functions\\\\node_modules\\\\firebase-admin\\\\lib\\\\index.js\"}"}}
-[debug] [2022-08-10T18:59:09.824Z] [runtime-status] [20156] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.22.0","resolution":"C:\\Users\\d_kro\\projects react\\wearshop\\functions\\node_modules\\firebase-functions\\lib\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [20156] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"3.22.0\",\"resolution\":\"C:\\\\Users\\\\d_kro\\\\projects react\\\\wearshop\\\\functions\\\\node_modules\\\\firebase-functions\\\\lib\\\\index.js\"}"}}
-[debug] [2022-08-10T18:59:09.825Z] [runtime-status] [20156] Outgoing network have been stubbed. [{"name":"http","status":"mocked"},{"name":"http","status":"mocked"},{"name":"https","status":"mocked"},{"name":"https","status":"mocked"},{"name":"net","status":"mocked"}] {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [20156] Outgoing network have been stubbed. [{\"name\":\"http\",\"status\":\"mocked\"},{\"name\":\"http\",\"status\":\"mocked\"},{\"name\":\"https\",\"status\":\"mocked\"},{\"name\":\"https\",\"status\":\"mocked\"},{\"name\":\"net\",\"status\":\"mocked\"}]"}}
-[debug] [2022-08-10T18:59:09.825Z] [runtime-status] [20156] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.22.0","resolution":"C:\\Users\\d_kro\\projects react\\wearshop\\functions\\node_modules\\firebase-functions\\lib\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [20156] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"3.22.0\",\"resolution\":\"C:\\\\Users\\\\d_kro\\\\projects react\\\\wearshop\\\\functions\\\\node_modules\\\\firebase-functions\\\\lib\\\\index.js\"}"}}
-[debug] [2022-08-10T18:59:09.873Z] [runtime-status] [20156] Checked functions.config() {"config":{}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [20156] Checked functions.config() {\"config\":{}}"}}
-[debug] [2022-08-10T18:59:09.873Z] [runtime-status] [20156] firebase-functions has been stubbed. {"functionsResolution":{"declared":true,"installed":true,"version":"3.22.0","resolution":"C:\\Users\\d_kro\\projects react\\wearshop\\functions\\node_modules\\firebase-functions\\lib\\index.js"}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [20156] firebase-functions has been stubbed. {\"functionsResolution\":{\"declared\":true,\"installed\":true,\"version\":\"3.22.0\",\"resolution\":\"C:\\\\Users\\\\d_kro\\\\projects react\\\\wearshop\\\\functions\\\\node_modules\\\\firebase-functions\\\\lib\\\\index.js\"}}"}}
-[debug] [2022-08-10T18:59:09.874Z] [runtime-status] [20156] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.22.0","resolution":"C:\\Users\\d_kro\\projects react\\wearshop\\functions\\node_modules\\firebase-functions\\lib\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [20156] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"3.22.0\",\"resolution\":\"C:\\\\Users\\\\d_kro\\\\projects react\\\\wearshop\\\\functions\\\\node_modules\\\\firebase-functions\\\\lib\\\\index.js\"}"}}
-[debug] [2022-08-10T18:59:09.875Z] [runtime-status] [20156] Resolved module firebase-admin {"declared":true,"installed":true,"version":"10.3.0","resolution":"C:\\Users\\d_kro\\projects react\\wearshop\\functions\\node_modules\\firebase-admin\\lib\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [20156] Resolved module firebase-admin {\"declared\":true,\"installed\":true,\"version\":\"10.3.0\",\"resolution\":\"C:\\\\Users\\\\d_kro\\\\projects react\\\\wearshop\\\\functions\\\\node_modules\\\\firebase-admin\\\\lib\\\\index.js\"}"}}
-[debug] [2022-08-10T18:59:09.878Z] [runtime-status] [20156] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.22.0","resolution":"C:\\Users\\d_kro\\projects react\\wearshop\\functions\\node_modules\\firebase-functions\\lib\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [20156] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"3.22.0\",\"resolution\":\"C:\\\\Users\\\\d_kro\\\\projects react\\\\wearshop\\\\functions\\\\node_modules\\\\firebase-functions\\\\lib\\\\index.js\"}"}}
-[debug] [2022-08-10T18:59:09.879Z] [runtime-status] [20156] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"10.3.0","resolution":"C:\\Users\\d_kro\\projects react\\wearshop\\functions\\node_modules\\firebase-admin\\lib\\index.js"}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [20156] firebase-admin has been stubbed. {\"adminResolution\":{\"declared\":true,\"installed\":true,\"version\":\"10.3.0\",\"resolution\":\"C:\\\\Users\\\\d_kro\\\\projects react\\\\wearshop\\\\functions\\\\node_modules\\\\firebase-admin\\\\lib\\\\index.js\"}}"}}
-[debug] [2022-08-10T18:59:09.879Z] [runtime-status] [20156] Functions runtime initialized. {"cwd":"C:\\Users\\d_kro\\projects react\\wearshop\\functions","node_version":"16.14.0"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [20156] Functions runtime initialized. {\"cwd\":\"C:\\\\Users\\\\d_kro\\\\projects react\\\\wearshop\\\\functions\",\"node_version\":\"16.14.0\"}"}}
-[debug] [2022-08-10T18:59:10.060Z] [runtime-status] [20156] Beginning invocation function api! {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [20156] Beginning invocation function api!"}}
+[debug] [2022-08-11T17:20:46.086Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2022-08-11T17:20:46.087Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2022-08-11T17:20:46.087Z] Accepted request GET /wearshop2424/us-central1/api --> us-central1-api
+[debug] [2022-08-11T17:20:46.111Z] [worker-pool] addWorker(us-central1-api) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] addWorker(us-central1-api)"}}
+[debug] [2022-08-11T17:20:46.111Z] [worker-pool] Adding worker with key us-central1-api, total=1 {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] Adding worker with key us-central1-api, total=1"}}
+[debug] [2022-08-11T17:20:46.111Z] [worker-pool] submitWork(triggerId=us-central1-api) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitWork(triggerId=us-central1-api)"}}
+[debug] [2022-08-11T17:20:46.112Z] [worker-us-central1-api-bdb1a745-15c8-4edf-99d2-8bc9e8aceb69]: BUSY {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-api-bdb1a745-15c8-4edf-99d2-8bc9e8aceb69]: BUSY"}}
+[debug] [2022-08-11T17:20:47.507Z] [runtime-status] [11492] Resolved module firebase-admin {"declared":true,"installed":true,"version":"10.3.0","resolution":"C:\\Users\\d_kro\\projects react\\wearshop\\functions\\node_modules\\firebase-admin\\lib\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [11492] Resolved module firebase-admin {\"declared\":true,\"installed\":true,\"version\":\"10.3.0\",\"resolution\":\"C:\\\\Users\\\\d_kro\\\\projects react\\\\wearshop\\\\functions\\\\node_modules\\\\firebase-admin\\\\lib\\\\index.js\"}"}}
+[debug] [2022-08-11T17:20:47.508Z] [runtime-status] [11492] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.22.0","resolution":"C:\\Users\\d_kro\\projects react\\wearshop\\functions\\node_modules\\firebase-functions\\lib\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [11492] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"3.22.0\",\"resolution\":\"C:\\\\Users\\\\d_kro\\\\projects react\\\\wearshop\\\\functions\\\\node_modules\\\\firebase-functions\\\\lib\\\\index.js\"}"}}
+[debug] [2022-08-11T17:20:47.510Z] [runtime-status] [11492] Outgoing network have been stubbed. [{"name":"http","status":"mocked"},{"name":"http","status":"mocked"},{"name":"https","status":"mocked"},{"name":"https","status":"mocked"},{"name":"net","status":"mocked"}] {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [11492] Outgoing network have been stubbed. [{\"name\":\"http\",\"status\":\"mocked\"},{\"name\":\"http\",\"status\":\"mocked\"},{\"name\":\"https\",\"status\":\"mocked\"},{\"name\":\"https\",\"status\":\"mocked\"},{\"name\":\"net\",\"status\":\"mocked\"}]"}}
+[debug] [2022-08-11T17:20:47.510Z] [runtime-status] [11492] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.22.0","resolution":"C:\\Users\\d_kro\\projects react\\wearshop\\functions\\node_modules\\firebase-functions\\lib\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [11492] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"3.22.0\",\"resolution\":\"C:\\\\Users\\\\d_kro\\\\projects react\\\\wearshop\\\\functions\\\\node_modules\\\\firebase-functions\\\\lib\\\\index.js\"}"}}
+[debug] [2022-08-11T17:20:47.556Z] [runtime-status] [11492] Checked functions.config() {"config":{}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [11492] Checked functions.config() {\"config\":{}}"}}
+[debug] [2022-08-11T17:20:47.556Z] [runtime-status] [11492] firebase-functions has been stubbed. {"functionsResolution":{"declared":true,"installed":true,"version":"3.22.0","resolution":"C:\\Users\\d_kro\\projects react\\wearshop\\functions\\node_modules\\firebase-functions\\lib\\index.js"}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [11492] firebase-functions has been stubbed. {\"functionsResolution\":{\"declared\":true,\"installed\":true,\"version\":\"3.22.0\",\"resolution\":\"C:\\\\Users\\\\d_kro\\\\projects react\\\\wearshop\\\\functions\\\\node_modules\\\\firebase-functions\\\\lib\\\\index.js\"}}"}}
+[debug] [2022-08-11T17:20:47.557Z] [runtime-status] [11492] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.22.0","resolution":"C:\\Users\\d_kro\\projects react\\wearshop\\functions\\node_modules\\firebase-functions\\lib\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [11492] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"3.22.0\",\"resolution\":\"C:\\\\Users\\\\d_kro\\\\projects react\\\\wearshop\\\\functions\\\\node_modules\\\\firebase-functions\\\\lib\\\\index.js\"}"}}
+[debug] [2022-08-11T17:20:47.558Z] [runtime-status] [11492] Resolved module firebase-admin {"declared":true,"installed":true,"version":"10.3.0","resolution":"C:\\Users\\d_kro\\projects react\\wearshop\\functions\\node_modules\\firebase-admin\\lib\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [11492] Resolved module firebase-admin {\"declared\":true,\"installed\":true,\"version\":\"10.3.0\",\"resolution\":\"C:\\\\Users\\\\d_kro\\\\projects react\\\\wearshop\\\\functions\\\\node_modules\\\\firebase-admin\\\\lib\\\\index.js\"}"}}
+[debug] [2022-08-11T17:20:47.559Z] [runtime-status] [11492] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.22.0","resolution":"C:\\Users\\d_kro\\projects react\\wearshop\\functions\\node_modules\\firebase-functions\\lib\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [11492] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"3.22.0\",\"resolution\":\"C:\\\\Users\\\\d_kro\\\\projects react\\\\wearshop\\\\functions\\\\node_modules\\\\firebase-functions\\\\lib\\\\index.js\"}"}}
+[debug] [2022-08-11T17:20:47.559Z] [runtime-status] [11492] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"10.3.0","resolution":"C:\\Users\\d_kro\\projects react\\wearshop\\functions\\node_modules\\firebase-admin\\lib\\index.js"}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [11492] firebase-admin has been stubbed. {\"adminResolution\":{\"declared\":true,\"installed\":true,\"version\":\"10.3.0\",\"resolution\":\"C:\\\\Users\\\\d_kro\\\\projects react\\\\wearshop\\\\functions\\\\node_modules\\\\firebase-admin\\\\lib\\\\index.js\"}}"}}
+[debug] [2022-08-11T17:20:47.559Z] [runtime-status] [11492] Functions runtime initialized. {"cwd":"C:\\Users\\d_kro\\projects react\\wearshop\\functions","node_version":"16.14.0"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [11492] Functions runtime initialized. {\"cwd\":\"C:\\\\Users\\\\d_kro\\\\projects react\\\\wearshop\\\\functions\",\"node_version\":\"16.14.0\"}"}}
+[debug] [2022-08-11T17:20:47.729Z] [runtime-status] [11492] Beginning invocation function api! {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [11492] Beginning invocation function api!"}}
 [info] i  functions: Beginning execution of "api" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Beginning execution of \"api\""}}
-[debug] [2022-08-10T18:59:10.061Z] [runtime-status] [20156] Running api in signature http {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [20156] Running api in signature http"}}
-[debug] [2022-08-10T18:59:10.066Z] [runtime-status] [20156] Listening to port: \\?\pipe\fire_emu_1e17d851211bdb6c {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [20156] Listening to port: \\\\?\\pipe\\fire_emu_1e17d851211bdb6c"}}
-[debug] [2022-08-10T18:59:10.145Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
-[debug] [2022-08-10T18:59:10.146Z] [functions] Got req.url=/wearshop2424/us-central1/api, mapping to path=/ {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/wearshop2424/us-central1/api, mapping to path=/"}}
-[debug] [2022-08-10T18:59:10.149Z] [runtime-status] [20156] Ephemeral server handling GET request {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [20156] Ephemeral server handling GET request"}}
-[debug] [2022-08-10T18:59:10.156Z] [runtime-status] [20156] Ephemeral server survived. {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [20156] Ephemeral server survived."}}
+[debug] [2022-08-11T17:20:47.730Z] [runtime-status] [11492] Running api in signature http {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [11492] Running api in signature http"}}
+[debug] [2022-08-11T17:20:47.735Z] [runtime-status] [11492] Listening to port: \\?\pipe\fire_emu_306fed0b4ffed1ce {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [11492] Listening to port: \\\\?\\pipe\\fire_emu_306fed0b4ffed1ce"}}
+[debug] [2022-08-11T17:20:47.768Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2022-08-11T17:20:47.768Z] [functions] Got req.url=/wearshop2424/us-central1/api, mapping to path=/ {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/wearshop2424/us-central1/api, mapping to path=/"}}
+[debug] [2022-08-11T17:20:47.770Z] [runtime-status] [11492] Ephemeral server handling GET request {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [11492] Ephemeral server handling GET request"}}
+[debug] [2022-08-11T17:20:47.774Z] [runtime-status] [11492] Ephemeral server survived. {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [11492] Ephemeral server survived."}}
 [info] i  functions: Finished "api" in ~1s {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Finished \"api\" in ~1s"}}
-[debug] [2022-08-10T18:59:10.157Z] [worker-us-central1-api-bbefe50e-bea0-4542-a3b5-37549e85884c]: IDLE {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-api-bbefe50e-bea0-4542-a3b5-37549e85884c]: IDLE"}}
-[debug] [2022-08-10T18:59:10.158Z] [work-queue] {"queueLength":0,"workRunningCount":0}
-[debug] [2022-08-10T18:59:49.083Z] [work-queue] {"queueLength":1,"workRunningCount":0}
-[debug] [2022-08-10T18:59:49.083Z] [work-queue] {"queueLength":0,"workRunningCount":1}
-[debug] [2022-08-10T18:59:49.084Z] Accepted request OPTIONS /wearshop2424/us-central1/api/payments/create --> us-central1-api
-[debug] [2022-08-10T18:59:49.084Z] [worker-pool] submitWork(triggerId=us-central1-api) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitWork(triggerId=us-central1-api)"}}
-[debug] [2022-08-10T18:59:49.084Z] [worker-us-central1-api-bbefe50e-bea0-4542-a3b5-37549e85884c]: BUSY {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-api-bbefe50e-bea0-4542-a3b5-37549e85884c]: BUSY"}}
-[debug] [2022-08-10T18:59:49.086Z] [runtime-status] [20156] Beginning invocation function api! {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [20156] Beginning invocation function api!"}}
+[debug] [2022-08-11T17:20:47.775Z] [worker-us-central1-api-bdb1a745-15c8-4edf-99d2-8bc9e8aceb69]: IDLE {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-api-bdb1a745-15c8-4edf-99d2-8bc9e8aceb69]: IDLE"}}
+[debug] [2022-08-11T17:20:47.776Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2022-08-11T17:21:23.482Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2022-08-11T17:21:23.482Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2022-08-11T17:21:23.483Z] Accepted request OPTIONS /wearshop2424/us-central1/api/payments/create --> us-central1-api
+[debug] [2022-08-11T17:21:23.483Z] [worker-pool] submitWork(triggerId=us-central1-api) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitWork(triggerId=us-central1-api)"}}
+[debug] [2022-08-11T17:21:23.483Z] [worker-us-central1-api-bdb1a745-15c8-4edf-99d2-8bc9e8aceb69]: BUSY {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-api-bdb1a745-15c8-4edf-99d2-8bc9e8aceb69]: BUSY"}}
+[debug] [2022-08-11T17:21:23.486Z] [runtime-status] [11492] Beginning invocation function api! {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [11492] Beginning invocation function api!"}}
 [info] i  functions: Beginning execution of "api" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Beginning execution of \"api\""}}
-[debug] [2022-08-10T18:59:49.087Z] [runtime-status] [20156] Running api in signature http {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [20156] Running api in signature http"}}
-[debug] [2022-08-10T18:59:49.087Z] [runtime-status] [20156] Listening to port: \\?\pipe\fire_emu_1e17d851211bdb6c {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [20156] Listening to port: \\\\?\\pipe\\fire_emu_1e17d851211bdb6c"}}
-[debug] [2022-08-10T18:59:49.194Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
-[debug] [2022-08-10T18:59:49.194Z] [functions] Got req.url=/wearshop2424/us-central1/api/payments/create, mapping to path=/payments/create {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/wearshop2424/us-central1/api/payments/create, mapping to path=/payments/create"}}
-[debug] [2022-08-10T18:59:49.197Z] [runtime-status] [20156] Ephemeral server handling OPTIONS request {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [20156] Ephemeral server handling OPTIONS request"}}
-[debug] [2022-08-10T18:59:49.199Z] [runtime-status] [20156] Ephemeral server survived. {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [20156] Ephemeral server survived."}}
+[debug] [2022-08-11T17:21:23.489Z] [runtime-status] [11492] Running api in signature http {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [11492] Running api in signature http"}}
+[debug] [2022-08-11T17:21:23.490Z] [runtime-status] [11492] Listening to port: \\?\pipe\fire_emu_306fed0b4ffed1ce {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [11492] Listening to port: \\\\?\\pipe\\fire_emu_306fed0b4ffed1ce"}}
+[debug] [2022-08-11T17:21:23.611Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2022-08-11T17:21:23.612Z] [functions] Got req.url=/wearshop2424/us-central1/api/payments/create, mapping to path=/payments/create {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/wearshop2424/us-central1/api/payments/create, mapping to path=/payments/create"}}
+[debug] [2022-08-11T17:21:23.617Z] [runtime-status] [11492] Ephemeral server handling OPTIONS request {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [11492] Ephemeral server handling OPTIONS request"}}
+[debug] [2022-08-11T17:21:23.620Z] [runtime-status] [11492] Ephemeral server survived. {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [11492] Ephemeral server survived."}}
 [info] i  functions: Finished "api" in ~1s {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Finished \"api\" in ~1s"}}
-[debug] [2022-08-10T18:59:49.201Z] [worker-us-central1-api-bbefe50e-bea0-4542-a3b5-37549e85884c]: IDLE {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-api-bbefe50e-bea0-4542-a3b5-37549e85884c]: IDLE"}}
-[debug] [2022-08-10T18:59:49.202Z] [work-queue] {"queueLength":0,"workRunningCount":0}
-[debug] [2022-08-10T18:59:49.203Z] [work-queue] {"queueLength":1,"workRunningCount":0}
-[debug] [2022-08-10T18:59:49.204Z] [work-queue] {"queueLength":0,"workRunningCount":1}
-[debug] [2022-08-10T18:59:49.204Z] Accepted request POST /wearshop2424/us-central1/api/payments/create --> us-central1-api
-[debug] [2022-08-10T18:59:49.204Z] [worker-pool] submitWork(triggerId=us-central1-api) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitWork(triggerId=us-central1-api)"}}
-[debug] [2022-08-10T18:59:49.204Z] [worker-us-central1-api-bbefe50e-bea0-4542-a3b5-37549e85884c]: BUSY {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-api-bbefe50e-bea0-4542-a3b5-37549e85884c]: BUSY"}}
-[debug] [2022-08-10T18:59:49.221Z] [runtime-status] [20156] Beginning invocation function api! {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [20156] Beginning invocation function api!"}}
+[debug] [2022-08-11T17:21:23.623Z] [worker-us-central1-api-bdb1a745-15c8-4edf-99d2-8bc9e8aceb69]: IDLE {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-api-bdb1a745-15c8-4edf-99d2-8bc9e8aceb69]: IDLE"}}
+[debug] [2022-08-11T17:21:23.623Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2022-08-11T17:21:23.625Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2022-08-11T17:21:23.625Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2022-08-11T17:21:23.625Z] Accepted request POST /wearshop2424/us-central1/api/payments/create --> us-central1-api
+[debug] [2022-08-11T17:21:23.626Z] [worker-pool] submitWork(triggerId=us-central1-api) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitWork(triggerId=us-central1-api)"}}
+[debug] [2022-08-11T17:21:23.626Z] [worker-us-central1-api-bdb1a745-15c8-4edf-99d2-8bc9e8aceb69]: BUSY {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-api-bdb1a745-15c8-4edf-99d2-8bc9e8aceb69]: BUSY"}}
+[debug] [2022-08-11T17:21:23.633Z] [runtime-status] [11492] Beginning invocation function api! {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [11492] Beginning invocation function api!"}}
 [info] i  functions: Beginning execution of "api" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Beginning execution of \"api\""}}
-[debug] [2022-08-10T18:59:49.222Z] [runtime-status] [20156] Running api in signature http {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [20156] Running api in signature http"}}
-[debug] [2022-08-10T18:59:49.223Z] [runtime-status] [20156] Listening to port: \\?\pipe\fire_emu_1e17d851211bdb6c {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [20156] Listening to port: \\\\?\\pipe\\fire_emu_1e17d851211bdb6c"}}
-[debug] [2022-08-10T18:59:49.315Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
-[debug] [2022-08-10T18:59:49.315Z] [functions] Got req.url=/wearshop2424/us-central1/api/payments/create, mapping to path=/payments/create {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/wearshop2424/us-central1/api/payments/create, mapping to path=/payments/create"}}
-[debug] [2022-08-10T18:59:49.331Z] [runtime-status] [20156] Ephemeral server handling POST request {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [20156] Ephemeral server handling POST request"}}
-[debug] [2022-08-10T18:59:49.334Z] [runtime-status] [20156] Ephemeral server survived. {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [20156] Ephemeral server survived."}}
+[debug] [2022-08-11T17:21:23.635Z] [runtime-status] [11492] Running api in signature http {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [11492] Running api in signature http"}}
+[debug] [2022-08-11T17:21:23.635Z] [runtime-status] [11492] Listening to port: \\?\pipe\fire_emu_306fed0b4ffed1ce {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [11492] Listening to port: \\\\?\\pipe\\fire_emu_306fed0b4ffed1ce"}}
+[debug] [2022-08-11T17:21:23.736Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2022-08-11T17:21:23.736Z] [functions] Got req.url=/wearshop2424/us-central1/api/payments/create, mapping to path=/payments/create {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/wearshop2424/us-central1/api/payments/create, mapping to path=/payments/create"}}
+[debug] [2022-08-11T17:21:23.773Z] [runtime-status] [11492] Ephemeral server handling POST request {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [11492] Ephemeral server handling POST request"}}
+[debug] [2022-08-11T17:21:23.794Z] [runtime-status] [11492] Ephemeral server survived. {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [11492] Ephemeral server survived."}}
 [info] i  functions: Finished "api" in ~1s {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Finished \"api\" in ~1s"}}
-[debug] [2022-08-10T18:59:49.335Z] [worker-us-central1-api-bbefe50e-bea0-4542-a3b5-37549e85884c]: IDLE {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-api-bbefe50e-bea0-4542-a3b5-37549e85884c]: IDLE"}}
-[debug] [2022-08-10T18:59:49.335Z] [work-queue] {"queueLength":0,"workRunningCount":0}
-[debug] [2022-08-10T19:01:06.223Z] [work-queue] {"queueLength":1,"workRunningCount":0}
-[debug] [2022-08-10T19:01:06.223Z] [work-queue] {"queueLength":0,"workRunningCount":1}
-[debug] [2022-08-10T19:01:06.223Z] Accepted request GET /wearshop2424/us-central1/api/payments/create --> us-central1-api
-[debug] [2022-08-10T19:01:06.224Z] [worker-pool] submitWork(triggerId=us-central1-api) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitWork(triggerId=us-central1-api)"}}
-[debug] [2022-08-10T19:01:06.224Z] [worker-us-central1-api-bbefe50e-bea0-4542-a3b5-37549e85884c]: BUSY {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-api-bbefe50e-bea0-4542-a3b5-37549e85884c]: BUSY"}}
-[debug] [2022-08-10T19:01:06.226Z] [runtime-status] [20156] Beginning invocation function api! {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [20156] Beginning invocation function api!"}}
+[debug] [2022-08-11T17:21:24.514Z] [worker-us-central1-api-bdb1a745-15c8-4edf-99d2-8bc9e8aceb69]: IDLE {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-api-bdb1a745-15c8-4edf-99d2-8bc9e8aceb69]: IDLE"}}
+[debug] [2022-08-11T17:21:24.514Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2022-08-11T18:08:00.153Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2022-08-11T18:08:00.154Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2022-08-11T18:08:00.154Z] Accepted request GET /wearshop2424/us-central1/api --> us-central1-api
+[debug] [2022-08-11T18:08:00.155Z] [worker-pool] submitWork(triggerId=us-central1-api) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitWork(triggerId=us-central1-api)"}}
+[debug] [2022-08-11T18:08:00.155Z] [worker-us-central1-api-bdb1a745-15c8-4edf-99d2-8bc9e8aceb69]: BUSY {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-api-bdb1a745-15c8-4edf-99d2-8bc9e8aceb69]: BUSY"}}
+[debug] [2022-08-11T18:08:00.157Z] [runtime-status] [11492] Beginning invocation function api! {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [11492] Beginning invocation function api!"}}
 [info] i  functions: Beginning execution of "api" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Beginning execution of \"api\""}}
-[debug] [2022-08-10T19:01:06.228Z] [runtime-status] [20156] Running api in signature http {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [20156] Running api in signature http"}}
-[debug] [2022-08-10T19:01:06.229Z] [runtime-status] [20156] Listening to port: \\?\pipe\fire_emu_1e17d851211bdb6c {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [20156] Listening to port: \\\\?\\pipe\\fire_emu_1e17d851211bdb6c"}}
-[debug] [2022-08-10T19:01:06.350Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
-[debug] [2022-08-10T19:01:06.350Z] [functions] Got req.url=/wearshop2424/us-central1/api/payments/create, mapping to path=/payments/create {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/wearshop2424/us-central1/api/payments/create, mapping to path=/payments/create"}}
-[debug] [2022-08-10T19:01:06.354Z] [runtime-status] [20156] Ephemeral server handling GET request {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [20156] Ephemeral server handling GET request"}}
-[debug] [2022-08-10T19:01:06.357Z] [runtime-status] [20156] Ephemeral server survived. {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [20156] Ephemeral server survived."}}
+[debug] [2022-08-11T18:08:00.160Z] [runtime-status] [11492] Running api in signature http {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [11492] Running api in signature http"}}
+[debug] [2022-08-11T18:08:00.162Z] [runtime-status] [11492] Listening to port: \\?\pipe\fire_emu_306fed0b4ffed1ce {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [11492] Listening to port: \\\\?\\pipe\\fire_emu_306fed0b4ffed1ce"}}
+[debug] [2022-08-11T18:08:00.279Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2022-08-11T18:08:00.280Z] [functions] Got req.url=/wearshop2424/us-central1/api, mapping to path=/ {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/wearshop2424/us-central1/api, mapping to path=/"}}
+[debug] [2022-08-11T18:08:00.283Z] [runtime-status] [11492] Ephemeral server handling GET request {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [11492] Ephemeral server handling GET request"}}
+[debug] [2022-08-11T18:08:00.288Z] [runtime-status] [11492] Ephemeral server survived. {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [11492] Ephemeral server survived."}}
 [info] i  functions: Finished "api" in ~1s {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Finished \"api\" in ~1s"}}
-[debug] [2022-08-10T19:01:06.359Z] [worker-us-central1-api-bbefe50e-bea0-4542-a3b5-37549e85884c]: IDLE {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-api-bbefe50e-bea0-4542-a3b5-37549e85884c]: IDLE"}}
-[debug] [2022-08-10T19:01:06.360Z] [work-queue] {"queueLength":0,"workRunningCount":0}
-[debug] [2022-08-10T19:01:12.402Z] File C:\Users\d_kro\projects react\wearshop\functions\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\d_kro\\projects react\\wearshop\\functions\\index.js changed, reloading triggers"}}
-[debug] [2022-08-10T19:01:13.404Z] [worker-pool] Shutting down IDLE worker (us-central1-api) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] Shutting down IDLE worker (us-central1-api)"}}
-[debug] [2022-08-10T19:01:13.404Z] [worker-us-central1-api-bbefe50e-bea0-4542-a3b5-37549e85884c]: FINISHING {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-api-bbefe50e-bea0-4542-a3b5-37549e85884c]: FINISHING"}}
-[debug] [2022-08-10T19:01:13.411Z] Validating nodejs source
-[debug] [2022-08-10T19:01:15.891Z] > [functions] package.json contents: {
+[debug] [2022-08-11T18:08:00.290Z] [worker-us-central1-api-bdb1a745-15c8-4edf-99d2-8bc9e8aceb69]: IDLE {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-api-bdb1a745-15c8-4edf-99d2-8bc9e8aceb69]: IDLE"}}
+[debug] [2022-08-11T18:08:00.291Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2022-08-11T18:08:02.431Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2022-08-11T18:08:02.432Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2022-08-11T18:08:02.432Z] Accepted request GET /wearshop2424/us-central1/api --> us-central1-api
+[debug] [2022-08-11T18:08:02.432Z] [worker-pool] submitWork(triggerId=us-central1-api) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitWork(triggerId=us-central1-api)"}}
+[debug] [2022-08-11T18:08:02.432Z] [worker-us-central1-api-bdb1a745-15c8-4edf-99d2-8bc9e8aceb69]: BUSY {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-api-bdb1a745-15c8-4edf-99d2-8bc9e8aceb69]: BUSY"}}
+[debug] [2022-08-11T18:08:02.433Z] [runtime-status] [11492] Beginning invocation function api! {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [11492] Beginning invocation function api!"}}
+[info] i  functions: Beginning execution of "api" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Beginning execution of \"api\""}}
+[debug] [2022-08-11T18:08:02.434Z] [runtime-status] [11492] Running api in signature http {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [11492] Running api in signature http"}}
+[debug] [2022-08-11T18:08:02.434Z] [runtime-status] [11492] Listening to port: \\?\pipe\fire_emu_306fed0b4ffed1ce {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [11492] Listening to port: \\\\?\\pipe\\fire_emu_306fed0b4ffed1ce"}}
+[debug] [2022-08-11T18:08:02.543Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2022-08-11T18:08:02.543Z] [functions] Got req.url=/wearshop2424/us-central1/api, mapping to path=/ {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/wearshop2424/us-central1/api, mapping to path=/"}}
+[debug] [2022-08-11T18:08:02.545Z] [runtime-status] [11492] Ephemeral server handling GET request {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [11492] Ephemeral server handling GET request"}}
+[debug] [2022-08-11T18:08:02.545Z] [runtime-status] [11492] Ephemeral server survived. {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [11492] Ephemeral server survived."}}
+[info] i  functions: Finished "api" in ~1s {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Finished \"api\" in ~1s"}}
+[debug] [2022-08-11T18:08:02.547Z] [worker-us-central1-api-bdb1a745-15c8-4edf-99d2-8bc9e8aceb69]: IDLE {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-api-bdb1a745-15c8-4edf-99d2-8bc9e8aceb69]: IDLE"}}
+[debug] [2022-08-11T18:08:02.547Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2022-08-11T18:08:11.848Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2022-08-11T18:08:11.848Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2022-08-11T18:08:11.849Z] Accepted request GET /wearshop2424/us-central1/api --> us-central1-api
+[debug] [2022-08-11T18:08:11.849Z] [worker-pool] submitWork(triggerId=us-central1-api) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitWork(triggerId=us-central1-api)"}}
+[debug] [2022-08-11T18:08:11.849Z] [worker-us-central1-api-bdb1a745-15c8-4edf-99d2-8bc9e8aceb69]: BUSY {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-api-bdb1a745-15c8-4edf-99d2-8bc9e8aceb69]: BUSY"}}
+[debug] [2022-08-11T18:08:11.850Z] [runtime-status] [11492] Beginning invocation function api! {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [11492] Beginning invocation function api!"}}
+[info] i  functions: Beginning execution of "api" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Beginning execution of \"api\""}}
+[debug] [2022-08-11T18:08:11.851Z] [runtime-status] [11492] Running api in signature http {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [11492] Running api in signature http"}}
+[debug] [2022-08-11T18:08:11.851Z] [runtime-status] [11492] Listening to port: \\?\pipe\fire_emu_306fed0b4ffed1ce {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [11492] Listening to port: \\\\?\\pipe\\fire_emu_306fed0b4ffed1ce"}}
+[debug] [2022-08-11T18:08:11.962Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2022-08-11T18:08:11.962Z] [functions] Got req.url=/wearshop2424/us-central1/api, mapping to path=/ {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/wearshop2424/us-central1/api, mapping to path=/"}}
+[debug] [2022-08-11T18:08:11.963Z] [runtime-status] [11492] Ephemeral server handling GET request {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [11492] Ephemeral server handling GET request"}}
+[debug] [2022-08-11T18:08:11.964Z] [runtime-status] [11492] Ephemeral server survived. {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [11492] Ephemeral server survived."}}
+[info] i  functions: Finished "api" in ~1s {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Finished \"api\" in ~1s"}}
+[debug] [2022-08-11T18:08:11.965Z] [worker-us-central1-api-bdb1a745-15c8-4edf-99d2-8bc9e8aceb69]: IDLE {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-api-bdb1a745-15c8-4edf-99d2-8bc9e8aceb69]: IDLE"}}
+[debug] [2022-08-11T18:08:11.965Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2022-08-11T18:09:38.675Z] ----------------------------------------------------------------------
+[debug] [2022-08-11T18:09:38.677Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\d_kro\projects react\wearshop\node_modules\firebase-tools\lib\bin\firebase.js emulators:start --only functions
+[debug] [2022-08-11T18:09:38.677Z] CLI Version:   11.4.2
+[debug] [2022-08-11T18:09:38.677Z] Platform:      win32
+[debug] [2022-08-11T18:09:38.677Z] Node Version:  v16.14.0
+[debug] [2022-08-11T18:09:38.679Z] Time:          Thu Aug 11 2022 20:09:38 GMT+0200 (czas środkowoeuropejski letni)
+[debug] [2022-08-11T18:09:38.679Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2022-08-11T18:09:38.733Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2022-08-11T18:09:38.734Z] > authorizing via signed-in user (krold2191@gmail.com)
+[info] i  emulators: Starting emulators: functions {"metadata":{"emulator":{"name":"hub"},"message":"Starting emulators: functions"}}
+[warn] !  emulators: It seems that you are running multiple instances of the emulator suite for project wearshop2424. This may result in unexpected behavior. 
+[debug] [2022-08-11T18:09:38.774Z] [hub] writing locator at C:\Users\d_kro\AppData\Local\Temp\hub-wearshop2424.json
+[warn] !  functions: The following emulators are not running, calls to these services from the Functions emulator will affect production: auth, firestore, database, hosting, pubsub, storage {"metadata":{"emulator":{"name":"functions"},"message":"The following emulators are not running, calls to these services from the Functions emulator will affect production: \u001b[1mauth, firestore, database, hosting, pubsub, storage\u001b[22m"}}
+[info] +  functions: Using node@16 from host. {"metadata":{"emulator":{"name":"functions"},"message":"Using node@16 from host."}}
+[debug] [2022-08-11T18:09:38.825Z] defaultcredentials: writing to file C:\Users\d_kro\AppData\Roaming\firebase\krold2191_gmail_com_application_default_credentials.json
+[debug] [2022-08-11T18:09:38.827Z] Setting GAC to C:\Users\d_kro\AppData\Roaming\firebase\krold2191_gmail_com_application_default_credentials.json {"metadata":{"emulator":{"name":"functions"},"message":"Setting GAC to C:\\Users\\d_kro\\AppData\\Roaming\\firebase\\krold2191_gmail_com_application_default_credentials.json"}}
+[debug] [2022-08-11T18:09:38.828Z] > refreshing access token with scopes: []
+[debug] [2022-08-11T18:09:38.830Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2022-08-11T18:09:38.830Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2022-08-11T18:09:38.991Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 200
+[debug] [2022-08-11T18:09:38.992Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2022-08-11T18:09:39.008Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/wearshop2424/adminSdkConfig [none]
+[debug] [2022-08-11T18:09:39.482Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/wearshop2424/adminSdkConfig 200
+[debug] [2022-08-11T18:09:39.483Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/wearshop2424/adminSdkConfig {"projectId":"wearshop2424","storageBucket":"wearshop2424.appspot.com","locationId":"us-central"}
+[warn] !  ui: Emulator UI unable to start on port 4000, starting on 4004 instead. {"metadata":{"emulator":{"name":"ui"},"message":"Emulator UI unable to start on port 4000, starting on 4004 instead."}}
+[debug] [2022-08-11T18:09:39.523Z] Ignoring unsupported arg: auto_download {"metadata":{"emulator":{"name":"ui"},"message":"Ignoring unsupported arg: auto_download"}}
+[debug] [2022-08-11T18:09:39.523Z] Ignoring unsupported arg: port {"metadata":{"emulator":{"name":"ui"},"message":"Ignoring unsupported arg: port"}}
+[debug] [2022-08-11T18:09:39.523Z] Starting Emulator UI with command {"binary":"node","args":["C:\\Users\\d_kro\\.cache\\firebase\\emulators\\ui-v1.8.1\\server\\server.js"],"optionalArgs":[],"joinArgs":false} {"metadata":{"emulator":{"name":"ui"},"message":"Starting Emulator UI with command {\"binary\":\"node\",\"args\":[\"C:\\\\Users\\\\d_kro\\\\.cache\\\\firebase\\\\emulators\\\\ui-v1.8.1\\\\server\\\\server.js\"],\"optionalArgs\":[],\"joinArgs\":false}"}}
+[info] i  ui: Emulator UI logging to ui-debug.log {"metadata":{"emulator":{"name":"ui"},"message":"Emulator UI logging to \u001b[1mui-debug.log\u001b[22m"}}
+[debug] [2022-08-11T18:09:39.660Z] Web / API server started at localhost:4004
+ {"metadata":{"emulator":{"name":"ui"},"message":"Web / API server started at localhost:4004\n"}}
+[info] i  functions: Watching "C:\Users\d_kro\projects react\wearshop\functions" for Cloud Functions... {"metadata":{"emulator":{"name":"functions"},"message":"Watching \"C:\\Users\\d_kro\\projects react\\wearshop\\functions\" for Cloud Functions..."}}
+[debug] [2022-08-11T18:09:39.823Z] Validating nodejs source
+[debug] [2022-08-11T18:09:42.248Z] > [functions] package.json contents: {
   "name": "functions",
   "description": "Cloud Functions for Firebase",
   "scripts": {
@@ -192,113 +253,6 @@ Issues? Report them at https://github.com/firebase/firebase-tools/issues and att
   },
   "private": true
 }
-[debug] [2022-08-10T19:01:15.891Z] Building nodejs source
-[debug] [2022-08-10T19:01:15.891Z] Analyzing nodejs backend spec
-[debug] [2022-08-10T19:01:15.892Z] [worker-us-central1-api-bbefe50e-bea0-4542-a3b5-37549e85884c]: exited {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-api-bbefe50e-bea0-4542-a3b5-37549e85884c]: exited"}}
-[debug] [2022-08-10T19:01:15.892Z] [worker-us-central1-api-bbefe50e-bea0-4542-a3b5-37549e85884c]: FINISHED {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-api-bbefe50e-bea0-4542-a3b5-37549e85884c]: FINISHED"}}
-[debug] [2022-08-10T19:01:15.893Z] Could not find functions.yaml. Must use http discovery
-[debug] [2022-08-10T19:01:15.920Z] File C:\Users\d_kro\projects react\wearshop\functions\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\d_kro\\projects react\\wearshop\\functions\\index.js changed, reloading triggers"}}
-[debug] [2022-08-10T19:01:16.144Z] Serving at port 9005
-
-[debug] [2022-08-10T19:01:16.258Z] Got response from /__/functions.yaml {"endpoints":{"api":{"platform":"gcfv1","httpsTrigger":{},"entryPoint":"api"}},"specVersion":"v1alpha1","requiredAPIs":[]}
-[debug] [2022-08-10T19:01:16.262Z] shutdown requested via /__/quitquitquit
-
-[debug] [2022-08-10T19:01:16.933Z] Validating nodejs source
-[debug] [2022-08-10T19:01:19.279Z] > [functions] package.json contents: {
-  "name": "functions",
-  "description": "Cloud Functions for Firebase",
-  "scripts": {
-    "lint": "eslint .",
-    "serve": "firebase emulators:start --only functions",
-    "shell": "firebase functions:shell",
-    "start": "npm run shell",
-    "deploy": "firebase deploy --only functions",
-    "logs": "firebase functions:log"
-  },
-  "engines": {
-    "node": "16"
-  },
-  "main": "index.js",
-  "dependencies": {
-    "firebase-admin": "^10.0.2",
-    "firebase-functions": "^3.6.1",
-    "stripe": "^8.124.0"
-  },
-  "devDependencies": {
-    "eslint": "^8.9.0",
-    "eslint-config-google": "^0.14.0",
-    "firebase-functions-test": "^0.2.0"
-  },
-  "private": true
-}
-[debug] [2022-08-10T19:01:19.279Z] Building nodejs source
-[debug] [2022-08-10T19:01:19.279Z] Analyzing nodejs backend spec
-[debug] [2022-08-10T19:01:19.280Z] [work-queue] {"queueLength":1,"workRunningCount":0}
-[debug] [2022-08-10T19:01:19.280Z] [work-queue] {"queueLength":0,"workRunningCount":1}
-[debug] [2022-08-10T19:01:19.280Z] Accepted request GET /wearshop2424/us-central1/api/payments/create --> us-central1-api
-[debug] [2022-08-10T19:01:19.280Z] [worker-pool] Cleaned up workers for us-central1-api: 1 --> 0 {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] Cleaned up workers for us-central1-api: 1 --> 0"}}
-[debug] [2022-08-10T19:01:19.297Z] [worker-pool] addWorker(us-central1-api) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] addWorker(us-central1-api)"}}
-[debug] [2022-08-10T19:01:19.298Z] [worker-pool] Adding worker with key us-central1-api, total=1 {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] Adding worker with key us-central1-api, total=1"}}
-[debug] [2022-08-10T19:01:19.298Z] [worker-pool] submitWork(triggerId=us-central1-api) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitWork(triggerId=us-central1-api)"}}
-[debug] [2022-08-10T19:01:19.298Z] [worker-us-central1-api-352b4789-97e4-47f0-a616-d6a2532f1984]: BUSY {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-api-352b4789-97e4-47f0-a616-d6a2532f1984]: BUSY"}}
-[debug] [2022-08-10T19:01:19.298Z] Could not find functions.yaml. Must use http discovery
-[debug] [2022-08-10T19:01:19.543Z] Serving at port 9005
-
-[debug] [2022-08-10T19:01:19.670Z] Got response from /__/functions.yaml {"endpoints":{"api":{"platform":"gcfv1","httpsTrigger":{},"entryPoint":"api"}},"specVersion":"v1alpha1","requiredAPIs":[]}
-[debug] [2022-08-10T19:01:19.675Z] shutdown requested via /__/quitquitquit
-
-[debug] [2022-08-10T19:01:20.585Z] [runtime-status] [9688] Resolved module firebase-admin {"declared":true,"installed":true,"version":"10.3.0","resolution":"C:\\Users\\d_kro\\projects react\\wearshop\\functions\\node_modules\\firebase-admin\\lib\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [9688] Resolved module firebase-admin {\"declared\":true,\"installed\":true,\"version\":\"10.3.0\",\"resolution\":\"C:\\\\Users\\\\d_kro\\\\projects react\\\\wearshop\\\\functions\\\\node_modules\\\\firebase-admin\\\\lib\\\\index.js\"}"}}
-[debug] [2022-08-10T19:01:20.587Z] [runtime-status] [9688] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.22.0","resolution":"C:\\Users\\d_kro\\projects react\\wearshop\\functions\\node_modules\\firebase-functions\\lib\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [9688] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"3.22.0\",\"resolution\":\"C:\\\\Users\\\\d_kro\\\\projects react\\\\wearshop\\\\functions\\\\node_modules\\\\firebase-functions\\\\lib\\\\index.js\"}"}}
-[debug] [2022-08-10T19:01:20.587Z] [runtime-status] [9688] Outgoing network have been stubbed. [{"name":"http","status":"mocked"},{"name":"http","status":"mocked"},{"name":"https","status":"mocked"},{"name":"https","status":"mocked"},{"name":"net","status":"mocked"}] {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [9688] Outgoing network have been stubbed. [{\"name\":\"http\",\"status\":\"mocked\"},{\"name\":\"http\",\"status\":\"mocked\"},{\"name\":\"https\",\"status\":\"mocked\"},{\"name\":\"https\",\"status\":\"mocked\"},{\"name\":\"net\",\"status\":\"mocked\"}]"}}
-[debug] [2022-08-10T19:01:20.588Z] [runtime-status] [9688] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.22.0","resolution":"C:\\Users\\d_kro\\projects react\\wearshop\\functions\\node_modules\\firebase-functions\\lib\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [9688] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"3.22.0\",\"resolution\":\"C:\\\\Users\\\\d_kro\\\\projects react\\\\wearshop\\\\functions\\\\node_modules\\\\firebase-functions\\\\lib\\\\index.js\"}"}}
-[debug] [2022-08-10T19:01:20.634Z] [runtime-status] [9688] Checked functions.config() {"config":{}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [9688] Checked functions.config() {\"config\":{}}"}}
-[debug] [2022-08-10T19:01:20.634Z] [runtime-status] [9688] firebase-functions has been stubbed. {"functionsResolution":{"declared":true,"installed":true,"version":"3.22.0","resolution":"C:\\Users\\d_kro\\projects react\\wearshop\\functions\\node_modules\\firebase-functions\\lib\\index.js"}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [9688] firebase-functions has been stubbed. {\"functionsResolution\":{\"declared\":true,\"installed\":true,\"version\":\"3.22.0\",\"resolution\":\"C:\\\\Users\\\\d_kro\\\\projects react\\\\wearshop\\\\functions\\\\node_modules\\\\firebase-functions\\\\lib\\\\index.js\"}}"}}
-[debug] [2022-08-10T19:01:20.635Z] [runtime-status] [9688] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.22.0","resolution":"C:\\Users\\d_kro\\projects react\\wearshop\\functions\\node_modules\\firebase-functions\\lib\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [9688] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"3.22.0\",\"resolution\":\"C:\\\\Users\\\\d_kro\\\\projects react\\\\wearshop\\\\functions\\\\node_modules\\\\firebase-functions\\\\lib\\\\index.js\"}"}}
-[debug] [2022-08-10T19:01:20.636Z] [runtime-status] [9688] Resolved module firebase-admin {"declared":true,"installed":true,"version":"10.3.0","resolution":"C:\\Users\\d_kro\\projects react\\wearshop\\functions\\node_modules\\firebase-admin\\lib\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [9688] Resolved module firebase-admin {\"declared\":true,\"installed\":true,\"version\":\"10.3.0\",\"resolution\":\"C:\\\\Users\\\\d_kro\\\\projects react\\\\wearshop\\\\functions\\\\node_modules\\\\firebase-admin\\\\lib\\\\index.js\"}"}}
-[debug] [2022-08-10T19:01:20.637Z] [runtime-status] [9688] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.22.0","resolution":"C:\\Users\\d_kro\\projects react\\wearshop\\functions\\node_modules\\firebase-functions\\lib\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [9688] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"3.22.0\",\"resolution\":\"C:\\\\Users\\\\d_kro\\\\projects react\\\\wearshop\\\\functions\\\\node_modules\\\\firebase-functions\\\\lib\\\\index.js\"}"}}
-[debug] [2022-08-10T19:01:20.637Z] [runtime-status] [9688] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"10.3.0","resolution":"C:\\Users\\d_kro\\projects react\\wearshop\\functions\\node_modules\\firebase-admin\\lib\\index.js"}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [9688] firebase-admin has been stubbed. {\"adminResolution\":{\"declared\":true,\"installed\":true,\"version\":\"10.3.0\",\"resolution\":\"C:\\\\Users\\\\d_kro\\\\projects react\\\\wearshop\\\\functions\\\\node_modules\\\\firebase-admin\\\\lib\\\\index.js\"}}"}}
-[debug] [2022-08-10T19:01:20.637Z] [runtime-status] [9688] Functions runtime initialized. {"cwd":"C:\\Users\\d_kro\\projects react\\wearshop\\functions","node_version":"16.14.0"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [9688] Functions runtime initialized. {\"cwd\":\"C:\\\\Users\\\\d_kro\\\\projects react\\\\wearshop\\\\functions\",\"node_version\":\"16.14.0\"}"}}
-[debug] [2022-08-10T19:01:20.799Z] [runtime-status] [9688] Beginning invocation function api! {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [9688] Beginning invocation function api!"}}
-[info] i  functions: Beginning execution of "api" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Beginning execution of \"api\""}}
-[debug] [2022-08-10T19:01:20.800Z] [runtime-status] [9688] Running api in signature http {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [9688] Running api in signature http"}}
-[debug] [2022-08-10T19:01:20.805Z] [runtime-status] [9688] Listening to port: \\?\pipe\fire_emu_36e340faa47f1227 {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [9688] Listening to port: \\\\?\\pipe\\fire_emu_36e340faa47f1227"}}
-[debug] [2022-08-10T19:01:20.922Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
-[debug] [2022-08-10T19:01:20.922Z] [functions] Got req.url=/wearshop2424/us-central1/api/payments/create, mapping to path=/payments/create {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/wearshop2424/us-central1/api/payments/create, mapping to path=/payments/create"}}
-[debug] [2022-08-10T19:01:20.926Z] [runtime-status] [9688] Ephemeral server handling GET request {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [9688] Ephemeral server handling GET request"}}
-[debug] [2022-08-10T19:01:20.933Z] [runtime-status] [9688] Ephemeral server survived. {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [9688] Ephemeral server survived."}}
-[info] i  functions: Finished "api" in ~1s {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Finished \"api\" in ~1s"}}
-[debug] [2022-08-10T19:01:20.934Z] [worker-us-central1-api-352b4789-97e4-47f0-a616-d6a2532f1984]: IDLE {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-api-352b4789-97e4-47f0-a616-d6a2532f1984]: IDLE"}}
-[debug] [2022-08-10T19:01:20.934Z] [work-queue] {"queueLength":0,"workRunningCount":0}
-[debug] [2022-08-10T19:01:42.521Z] [work-queue] {"queueLength":1,"workRunningCount":0}
-[debug] [2022-08-10T19:01:42.521Z] [work-queue] {"queueLength":0,"workRunningCount":1}
-[debug] [2022-08-10T19:01:42.521Z] Accepted request OPTIONS /wearshop2424/us-central1/api/payments/create --> us-central1-api
-[debug] [2022-08-10T19:01:42.521Z] [worker-pool] submitWork(triggerId=us-central1-api) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitWork(triggerId=us-central1-api)"}}
-[debug] [2022-08-10T19:01:42.521Z] [worker-us-central1-api-352b4789-97e4-47f0-a616-d6a2532f1984]: BUSY {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-api-352b4789-97e4-47f0-a616-d6a2532f1984]: BUSY"}}
-[debug] [2022-08-10T19:01:42.522Z] [runtime-status] [9688] Beginning invocation function api! {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [9688] Beginning invocation function api!"}}
-[info] i  functions: Beginning execution of "api" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Beginning execution of \"api\""}}
-[debug] [2022-08-10T19:01:42.524Z] [runtime-status] [9688] Running api in signature http {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [9688] Running api in signature http"}}
-[debug] [2022-08-10T19:01:42.525Z] [runtime-status] [9688] Listening to port: \\?\pipe\fire_emu_36e340faa47f1227 {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [9688] Listening to port: \\\\?\\pipe\\fire_emu_36e340faa47f1227"}}
-[debug] [2022-08-10T19:01:42.629Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
-[debug] [2022-08-10T19:01:42.630Z] [functions] Got req.url=/wearshop2424/us-central1/api/payments/create, mapping to path=/payments/create {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/wearshop2424/us-central1/api/payments/create, mapping to path=/payments/create"}}
-[debug] [2022-08-10T19:01:42.631Z] [runtime-status] [9688] Ephemeral server handling OPTIONS request {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [9688] Ephemeral server handling OPTIONS request"}}
-[debug] [2022-08-10T19:01:42.632Z] [runtime-status] [9688] Ephemeral server survived. {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [9688] Ephemeral server survived."}}
-[info] i  functions: Finished "api" in ~1s {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Finished \"api\" in ~1s"}}
-[debug] [2022-08-10T19:01:42.633Z] [worker-us-central1-api-352b4789-97e4-47f0-a616-d6a2532f1984]: IDLE {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-api-352b4789-97e4-47f0-a616-d6a2532f1984]: IDLE"}}
-[debug] [2022-08-10T19:01:42.633Z] [work-queue] {"queueLength":0,"workRunningCount":0}
-[debug] [2022-08-10T19:01:42.634Z] [work-queue] {"queueLength":1,"workRunningCount":0}
-[debug] [2022-08-10T19:01:42.634Z] [work-queue] {"queueLength":0,"workRunningCount":1}
-[debug] [2022-08-10T19:01:42.634Z] Accepted request POST /wearshop2424/us-central1/api/payments/create --> us-central1-api
-[debug] [2022-08-10T19:01:42.634Z] [worker-pool] submitWork(triggerId=us-central1-api) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitWork(triggerId=us-central1-api)"}}
-[debug] [2022-08-10T19:01:42.634Z] [worker-us-central1-api-352b4789-97e4-47f0-a616-d6a2532f1984]: BUSY {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-api-352b4789-97e4-47f0-a616-d6a2532f1984]: BUSY"}}
-[debug] [2022-08-10T19:01:42.658Z] [runtime-status] [9688] Beginning invocation function api! {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [9688] Beginning invocation function api!"}}
-[info] i  functions: Beginning execution of "api" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Beginning execution of \"api\""}}
-[debug] [2022-08-10T19:01:42.659Z] [runtime-status] [9688] Running api in signature http {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [9688] Running api in signature http"}}
-[debug] [2022-08-10T19:01:42.659Z] [runtime-status] [9688] Listening to port: \\?\pipe\fire_emu_36e340faa47f1227 {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [9688] Listening to port: \\\\?\\pipe\\fire_emu_36e340faa47f1227"}}
-[debug] [2022-08-10T19:01:42.739Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
-[debug] [2022-08-10T19:01:42.739Z] [functions] Got req.url=/wearshop2424/us-central1/api/payments/create, mapping to path=/payments/create {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/wearshop2424/us-central1/api/payments/create, mapping to path=/payments/create"}}
-[debug] [2022-08-10T19:01:42.750Z] [runtime-status] [9688] Ephemeral server handling POST request {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [9688] Ephemeral server handling POST request"}}
-[debug] [2022-08-10T19:01:42.752Z] [runtime-status] [9688] Ephemeral server survived. {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [9688] Ephemeral server survived."}}
-[info] i  functions: Finished "api" in ~1s {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Finished \"api\" in ~1s"}}
-[debug] [2022-08-10T19:01:42.753Z] [worker-us-central1-api-352b4789-97e4-47f0-a616-d6a2532f1984]: IDLE {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-api-352b4789-97e4-47f0-a616-d6a2532f1984]: IDLE"}}
-[debug] [2022-08-10T19:01:42.753Z] [work-queue] {"queueLength":0,"workRunningCount":0}
-[debug] [2022-08-10T19:04:53.880Z] File C:\Users\d_kro\projects react\wearshop\functions\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\d_kro\\projects react\\wearshop\\functions\\index.js changed, reloading triggers"}}
+[debug] [2022-08-11T18:09:42.249Z] Building nodejs source
+[debug] [2022-08-11T18:09:42.249Z] Analyzing nodejs backend spec
+[debug] [2022-08-11T18:09:42.250Z] Could not find functions.yaml. Must use http discovery
