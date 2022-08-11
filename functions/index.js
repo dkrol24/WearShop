@@ -4,6 +4,7 @@ const cors = require("cors");
 const stripe = require("stripe")(
   "sk_test_51LRZQoEht4OYCF0fqZumk4wQSHIpxzSalG96qX9UksaigKu0JxemlToTxv92Q3W2g3mqowoeeVx0hCquqTzrK1vL00WMTkMVjF"
 );
+/////// SECRET KEY STRIPE API
 const app = express();
 
 app.use(

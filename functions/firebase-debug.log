@@ -256,3 +256,132 @@ Issues? Report them at https://github.com/firebase/firebase-tools/issues and att
 [debug] [2022-08-11T18:09:42.249Z] Building nodejs source
 [debug] [2022-08-11T18:09:42.249Z] Analyzing nodejs backend spec
 [debug] [2022-08-11T18:09:42.250Z] Could not find functions.yaml. Must use http discovery
+[debug] [2022-08-11T18:09:42.490Z] Serving at port 9005
+
+[debug] [2022-08-11T18:09:42.607Z] Got response from /__/functions.yaml {"endpoints":{"api":{"platform":"gcfv1","httpsTrigger":{},"entryPoint":"api"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[debug] [2022-08-11T18:09:42.614Z] shutdown requested via /__/quitquitquit
+
+[info] +  functions[us-central1-api]: http function initialized (http://localhost:5001/wearshop2424/us-central1/api). {"metadata":{"emulator":{"name":"functions"},"message":"\u001b[1mhttp\u001b[22m function initialized (http://localhost:5001/wearshop2424/us-central1/api)."}}
+[info] 
+┌─────────────────────────────────────────────────────────────┐
+│ ✔  All emulators ready! It is now safe to connect your app. │
+│ i  View Emulator UI at http://localhost:4004                │
+└─────────────────────────────────────────────────────────────┘
+
+┌───────────┬────────────────┬─────────────────────────────────┐
+│ Emulator  │ Host:Port      │ View in Emulator UI             │
+├───────────┼────────────────┼─────────────────────────────────┤
+│ Functions │ localhost:5001 │ http://localhost:4004/functions │
+└───────────┴────────────────┴─────────────────────────────────┘
+  Emulator Hub running at localhost:4400
+  Other reserved ports: 4500
+
+Issues? Report them at https://github.com/firebase/firebase-tools/issues and attach the *-debug.log files.
+ 
+[debug] [2022-08-11T18:09:49.148Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2022-08-11T18:09:49.149Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2022-08-11T18:09:49.150Z] Accepted request GET /wearshop2424/us-central1/api --> us-central1-api
+[debug] [2022-08-11T18:09:49.183Z] [worker-pool] addWorker(us-central1-api) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] addWorker(us-central1-api)"}}
+[debug] [2022-08-11T18:09:49.183Z] [worker-pool] Adding worker with key us-central1-api, total=1 {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] Adding worker with key us-central1-api, total=1"}}
+[debug] [2022-08-11T18:09:49.184Z] [worker-pool] submitWork(triggerId=us-central1-api) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitWork(triggerId=us-central1-api)"}}
+[debug] [2022-08-11T18:09:49.184Z] [worker-us-central1-api-a7623609-7747-432c-911d-e5a8afdec8f4]: BUSY {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-api-a7623609-7747-432c-911d-e5a8afdec8f4]: BUSY"}}
+[debug] [2022-08-11T18:09:50.437Z] [runtime-status] [6396] Resolved module firebase-admin {"declared":true,"installed":true,"version":"10.3.0","resolution":"C:\\Users\\d_kro\\projects react\\wearshop\\functions\\node_modules\\firebase-admin\\lib\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [6396] Resolved module firebase-admin {\"declared\":true,\"installed\":true,\"version\":\"10.3.0\",\"resolution\":\"C:\\\\Users\\\\d_kro\\\\projects react\\\\wearshop\\\\functions\\\\node_modules\\\\firebase-admin\\\\lib\\\\index.js\"}"}}
+[debug] [2022-08-11T18:09:50.438Z] [runtime-status] [6396] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.22.0","resolution":"C:\\Users\\d_kro\\projects react\\wearshop\\functions\\node_modules\\firebase-functions\\lib\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [6396] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"3.22.0\",\"resolution\":\"C:\\\\Users\\\\d_kro\\\\projects react\\\\wearshop\\\\functions\\\\node_modules\\\\firebase-functions\\\\lib\\\\index.js\"}"}}
+[debug] [2022-08-11T18:09:50.439Z] [runtime-status] [6396] Outgoing network have been stubbed. [{"name":"http","status":"mocked"},{"name":"http","status":"mocked"},{"name":"https","status":"mocked"},{"name":"https","status":"mocked"},{"name":"net","status":"mocked"}] {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [6396] Outgoing network have been stubbed. [{\"name\":\"http\",\"status\":\"mocked\"},{\"name\":\"http\",\"status\":\"mocked\"},{\"name\":\"https\",\"status\":\"mocked\"},{\"name\":\"https\",\"status\":\"mocked\"},{\"name\":\"net\",\"status\":\"mocked\"}]"}}
+[debug] [2022-08-11T18:09:50.439Z] [runtime-status] [6396] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.22.0","resolution":"C:\\Users\\d_kro\\projects react\\wearshop\\functions\\node_modules\\firebase-functions\\lib\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [6396] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"3.22.0\",\"resolution\":\"C:\\\\Users\\\\d_kro\\\\projects react\\\\wearshop\\\\functions\\\\node_modules\\\\firebase-functions\\\\lib\\\\index.js\"}"}}
+[debug] [2022-08-11T18:09:50.486Z] [runtime-status] [6396] Checked functions.config() {"config":{}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [6396] Checked functions.config() {\"config\":{}}"}}
+[debug] [2022-08-11T18:09:50.486Z] [runtime-status] [6396] firebase-functions has been stubbed. {"functionsResolution":{"declared":true,"installed":true,"version":"3.22.0","resolution":"C:\\Users\\d_kro\\projects react\\wearshop\\functions\\node_modules\\firebase-functions\\lib\\index.js"}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [6396] firebase-functions has been stubbed. {\"functionsResolution\":{\"declared\":true,\"installed\":true,\"version\":\"3.22.0\",\"resolution\":\"C:\\\\Users\\\\d_kro\\\\projects react\\\\wearshop\\\\functions\\\\node_modules\\\\firebase-functions\\\\lib\\\\index.js\"}}"}}
+[debug] [2022-08-11T18:09:50.487Z] [runtime-status] [6396] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.22.0","resolution":"C:\\Users\\d_kro\\projects react\\wearshop\\functions\\node_modules\\firebase-functions\\lib\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [6396] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"3.22.0\",\"resolution\":\"C:\\\\Users\\\\d_kro\\\\projects react\\\\wearshop\\\\functions\\\\node_modules\\\\firebase-functions\\\\lib\\\\index.js\"}"}}
+[debug] [2022-08-11T18:09:50.488Z] [runtime-status] [6396] Resolved module firebase-admin {"declared":true,"installed":true,"version":"10.3.0","resolution":"C:\\Users\\d_kro\\projects react\\wearshop\\functions\\node_modules\\firebase-admin\\lib\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [6396] Resolved module firebase-admin {\"declared\":true,\"installed\":true,\"version\":\"10.3.0\",\"resolution\":\"C:\\\\Users\\\\d_kro\\\\projects react\\\\wearshop\\\\functions\\\\node_modules\\\\firebase-admin\\\\lib\\\\index.js\"}"}}
+[debug] [2022-08-11T18:09:50.490Z] [runtime-status] [6396] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.22.0","resolution":"C:\\Users\\d_kro\\projects react\\wearshop\\functions\\node_modules\\firebase-functions\\lib\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [6396] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"3.22.0\",\"resolution\":\"C:\\\\Users\\\\d_kro\\\\projects react\\\\wearshop\\\\functions\\\\node_modules\\\\firebase-functions\\\\lib\\\\index.js\"}"}}
+[debug] [2022-08-11T18:09:50.490Z] [runtime-status] [6396] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"10.3.0","resolution":"C:\\Users\\d_kro\\projects react\\wearshop\\functions\\node_modules\\firebase-admin\\lib\\index.js"}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [6396] firebase-admin has been stubbed. {\"adminResolution\":{\"declared\":true,\"installed\":true,\"version\":\"10.3.0\",\"resolution\":\"C:\\\\Users\\\\d_kro\\\\projects react\\\\wearshop\\\\functions\\\\node_modules\\\\firebase-admin\\\\lib\\\\index.js\"}}"}}
+[debug] [2022-08-11T18:09:50.490Z] [runtime-status] [6396] Functions runtime initialized. {"cwd":"C:\\Users\\d_kro\\projects react\\wearshop\\functions","node_version":"16.14.0"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [6396] Functions runtime initialized. {\"cwd\":\"C:\\\\Users\\\\d_kro\\\\projects react\\\\wearshop\\\\functions\",\"node_version\":\"16.14.0\"}"}}
+[debug] [2022-08-11T18:09:50.658Z] [runtime-status] [6396] Beginning invocation function api! {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [6396] Beginning invocation function api!"}}
+[info] i  functions: Beginning execution of "api" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Beginning execution of \"api\""}}
+[debug] [2022-08-11T18:09:50.659Z] [runtime-status] [6396] Running api in signature http {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [6396] Running api in signature http"}}
+[debug] [2022-08-11T18:09:50.663Z] [runtime-status] [6396] Listening to port: \\?\pipe\fire_emu_c692998fd8d6b116 {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [6396] Listening to port: \\\\?\\pipe\\fire_emu_c692998fd8d6b116"}}
+[debug] [2022-08-11T18:09:50.720Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2022-08-11T18:09:50.720Z] [functions] Got req.url=/wearshop2424/us-central1/api, mapping to path=/ {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/wearshop2424/us-central1/api, mapping to path=/"}}
+[debug] [2022-08-11T18:09:50.722Z] [runtime-status] [6396] Ephemeral server handling GET request {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [6396] Ephemeral server handling GET request"}}
+[debug] [2022-08-11T18:09:50.726Z] [runtime-status] [6396] Ephemeral server survived. {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [6396] Ephemeral server survived."}}
+[info] i  functions: Finished "api" in ~1s {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Finished \"api\" in ~1s"}}
+[debug] [2022-08-11T18:09:50.727Z] [worker-us-central1-api-a7623609-7747-432c-911d-e5a8afdec8f4]: IDLE {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-api-a7623609-7747-432c-911d-e5a8afdec8f4]: IDLE"}}
+[debug] [2022-08-11T18:09:50.728Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2022-08-11T18:46:16.923Z] File C:\Users\d_kro\projects react\wearshop\functions\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\d_kro\\projects react\\wearshop\\functions\\index.js changed, reloading triggers"}}
+[debug] [2022-08-11T18:46:17.929Z] [worker-pool] Shutting down IDLE worker (us-central1-api) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] Shutting down IDLE worker (us-central1-api)"}}
+[debug] [2022-08-11T18:46:17.930Z] [worker-us-central1-api-a7623609-7747-432c-911d-e5a8afdec8f4]: FINISHING {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-api-a7623609-7747-432c-911d-e5a8afdec8f4]: FINISHING"}}
+[debug] [2022-08-11T18:46:17.935Z] Validating nodejs source
+[debug] [2022-08-11T18:46:20.439Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "16"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "firebase-admin": "^10.0.2",
+    "firebase-functions": "^3.6.1",
+    "stripe": "^8.124.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.9.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^0.2.0"
+  },
+  "private": true
+}
+[debug] [2022-08-11T18:46:20.439Z] Building nodejs source
+[debug] [2022-08-11T18:46:20.439Z] Analyzing nodejs backend spec
+[debug] [2022-08-11T18:46:20.440Z] [worker-us-central1-api-a7623609-7747-432c-911d-e5a8afdec8f4]: exited {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-api-a7623609-7747-432c-911d-e5a8afdec8f4]: exited"}}
+[debug] [2022-08-11T18:46:20.440Z] [worker-us-central1-api-a7623609-7747-432c-911d-e5a8afdec8f4]: FINISHED {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-api-a7623609-7747-432c-911d-e5a8afdec8f4]: FINISHED"}}
+[debug] [2022-08-11T18:46:20.442Z] Could not find functions.yaml. Must use http discovery
+[debug] [2022-08-11T18:46:20.769Z] Serving at port 9005
+
+[debug] [2022-08-11T18:46:20.928Z] Got response from /__/functions.yaml {"endpoints":{"api":{"platform":"gcfv1","httpsTrigger":{},"entryPoint":"api"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[debug] [2022-08-11T18:46:20.933Z] shutdown requested via /__/quitquitquit
+
+[debug] [2022-08-11T18:46:22.586Z] File C:\Users\d_kro\projects react\wearshop\functions\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\d_kro\\projects react\\wearshop\\functions\\index.js changed, reloading triggers"}}
+[debug] [2022-08-11T18:46:23.598Z] Validating nodejs source
+[debug] [2022-08-11T18:46:26.102Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "16"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "firebase-admin": "^10.0.2",
+    "firebase-functions": "^3.6.1",
+    "stripe": "^8.124.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.9.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^0.2.0"
+  },
+  "private": true
+}
+[debug] [2022-08-11T18:46:26.102Z] Building nodejs source
+[debug] [2022-08-11T18:46:26.102Z] Analyzing nodejs backend spec
+[debug] [2022-08-11T18:46:26.103Z] Could not find functions.yaml. Must use http discovery
+[debug] [2022-08-11T18:46:26.356Z] Serving at port 9005
+
+[debug] [2022-08-11T18:46:26.478Z] Got response from /__/functions.yaml {"endpoints":{"api":{"platform":"gcfv1","httpsTrigger":{},"entryPoint":"api"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[debug] [2022-08-11T18:46:26.482Z] shutdown requested via /__/quitquitquit
+
