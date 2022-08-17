@@ -147,6 +147,14 @@ const App = (props) => {
             </WithAdminAuth>
           )}
         />
+         <Route
+          path="*"
+          render={() => (
+            <HomepageLayout>
+              <Homepage />
+            </HomepageLayout>
+          )}
+        />
       </Switch>
     </div>
   );

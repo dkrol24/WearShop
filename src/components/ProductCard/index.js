@@ -58,7 +58,7 @@ const ProductCard = ({}) => {
                 {...configAddToCartBtn}
                 onClick={() => handleAddToCart(product)}
               >
-                Add to cart
+                Add to carts
               </Button>
             </div>
           </li>
