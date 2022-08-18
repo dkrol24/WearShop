@@ -7,7 +7,7 @@ import { checkUserSession } from "./redux/User/user.actions";
 import AdminToolbar from "./components/AdminToolbar";
 
 // hoc
-import WithAuth from "./hoc/WithAuth";
+import WithAuth from "./hoc/withAuth";
 import WithAdminAuth from "./hoc/withAdminAuth";
 
 // layouts
