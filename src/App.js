@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 import { useDispatch } from "react-redux";
 import { Switch, Route } from "react-router-dom";
 import { checkUserSession } from "./redux/User/user.actions";
-
+//firebase products
 // components
 import AdminToolbar from "./components/AdminToolbar";
 
@@ -147,7 +147,7 @@ const App = (props) => {
             </WithAdminAuth>
           )}
         />
-         <Route
+        <Route
           path="*"
           render={() => (
             <HomepageLayout>

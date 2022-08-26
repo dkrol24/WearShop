@@ -15,10 +15,9 @@
   width: 33.333333333333333%;
   margin: 0 auto 2rem;
   padding: 0 10px;
-
   .thumb {
     display: block;
-    width: 100%;
+    width: fit-content;
 
     img {
       display: block;
